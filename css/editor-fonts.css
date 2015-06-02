@@ -1,0 +1,26 @@
+@font-face {
+			font-family: 'Icons';
+			src: url("../fonts/editor/icons.eot");
+			src: url("../fonts/editor/icons.svg#icons") format('svg'), 
+			url("../fonts/editor/icons.eot?#iefix") format('embedded-opentype'),
+			url("../fonts/editor/icons.woff") format('woff'), 
+			url("../fonts/editor/icons.ttf") format('truetype');
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-decoration: inherit;
+			text-transform: none;
+		}
+@font-face {
+			font-family: 'Lato';
+			src: url("../fonts/editor/lato.eot");
+			src: url("../fonts/editor/lato.svg#icons") format('svg'), 
+			url("../fonts/editor/lato.eot?#iefix") format('embedded-opentype'),
+			url("../fonts/editor/lato.woff") format('woff'), 
+			url("../fonts/editor/lato.ttf") format('truetype');
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-decoration: inherit;
+			text-transform: none;
+}

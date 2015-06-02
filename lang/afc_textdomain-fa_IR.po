@@ -1,0 +1,1046 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: afc v1.1\n"
+"POT-Creation-Date: 2015-05-28 18:22+0330\n"
+"PO-Revision-Date: 2015-05-28 18:22+0330\n"
+"Last-Translator: wp-magic <wpmagic70@gmail.com>\n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../advanced-font-changer.php:196
+msgid "Font Changer"
+msgstr "ویرایشگر فونت"
+
+#: ../advanced-font-changer.php:197
+msgid "General Settings"
+msgstr "تنظیمات عمومی"
+
+#: ../advanced-font-changer.php:198 ../inc/admin/general.php:7
+#: ../inc/classes/class_afcstrings.php:137
+msgid "Manage Fonts"
+msgstr "مدیریت فونت ها"
+
+#: ../advanced-font-changer.php:200
+msgid "Upload A Font"
+msgstr "آپلود فونت"
+
+#: ../advanced-font-changer.php:201 ../inc/admin/addexternalfont.php:43
+#: ../inc/classes/class_afcstrings.php:139
+msgid "Add External Font"
+msgstr "اضافه کردن فونت خارجی"
+
+#: ../advanced-font-changer.php:202 ../inc/admin/general.php:7
+#: ../inc/classes/class_afcstrings.php:144
+msgid "Manage Selectors"
+msgstr "مدیریت سلکتورها"
+
+#: ../advanced-font-changer.php:204
+msgid "Add selector"
+msgstr "ایجاد سلکتور"
+
+#: ../advanced-font-changer.php:205 ../inc/admin/general.php:7
+msgid "Import/Export"
+msgstr "تنظیمات وروردی / خروجی گیری "
+
+#: ../advanced-font-changer.php:216 ../inc/admin/editfont.php:39
+msgid "Edit Font"
+msgstr "ویرایش فونت"
+
+#: ../inc/admin/addexternalfont.php:8 ../inc/admin/addselector.php:8
+#: ../inc/admin/fontslist.php:10 ../inc/admin/general.php:8
+#: ../inc/admin/import-export.php:8 ../inc/admin/selectorslist.php:8
+#: ../inc/admin/uploadfonts.php:8
+msgid "Advanced Font Changer"
+msgstr "ویرایشگر حرفه ای فونت"
+
+#: ../inc/admin/addexternalfont.php:24 ../inc/admin/addselector.php:25
+#: ../inc/admin/editfont.php:21 ../inc/admin/editselector.php:22
+#: ../inc/admin/general.php:24 ../inc/admin/import-export.php:24
+#: ../inc/admin/uploadfonts.php:24
+msgid "Submit"
+msgstr "تایید"
+
+#: ../inc/admin/addexternalfont.php:50 ../inc/admin/editfont.php:47
+msgid "Font Status <strong style=\"color:red;\">*</strong>"
+msgstr "نوع فونت <strong style=\"color:red;\">*</strong>"
+
+#: ../inc/admin/addexternalfont.php:58 ../inc/admin/editfont.php:55
+msgid "Font Name <strong style=\"color:red;\">*</strong>"
+msgstr "نام فونت <strong style=\"color:red;\">*</strong>"
+
+#: ../inc/admin/addexternalfont.php:66 ../inc/admin/editfont.php:63
+msgid "Font URL"
+msgstr "آدرس فونت"
+
+#: ../inc/admin/addexternalfont.php:74 ../inc/admin/editfont.php:71
+msgid "Font Meta (FVD)"
+msgstr "اطلاعات اضافی (FVD)"
+
+#: ../inc/admin/addexternalfont.php:87 ../inc/admin/editfont.php:86
+msgid "Unknown"
+msgstr "ناشناخته"
+
+#: ../inc/admin/addexternalfont.php:88 ../inc/admin/editfont.php:87
+msgid "Google"
+msgstr "گوگل"
+
+#: ../inc/admin/addexternalfont.php:89
+msgid "Local"
+msgstr "لوکال"
+
+#: ../inc/admin/addexternalfont.php:125
+msgid ""
+"Here you can add a external font to plugin's fonts list. <br /> <strong>Note:"
+"</strong> If you are adding a google font or a font which is included in os, "
+"just write font name and left the url empty.( example: Tahoma, Helvetica, "
+"Droid Sans , etc ).<br /> <strong>Note2:</strong> If you are unable to "
+"upload your fonts to the plugin using upload font page, you can add its name "
+"to plugin fonts list by choosing local font. In this case the name of your "
+"font is your font file name."
+msgstr ""
+"در این قسمت می توانید فونتی خارجی به لیست فونت های افزونه اضافه نمایید. <br> "
+"<strong>نکته: </strong> اگر قصد اضافه نمودن فونتی از سیستم عاملتان یا فونتی "
+"از گوگل را دارید، نیازی به تکمیل فیلد آدرس نیست.( به عنوان مثالی از فونت "
+"سیستم عامل می توان فونت Tahoma را نام برد ). <br /> <strong>نکته 2: </"
+"strong> اگر قادر به آپلود فونت هایتان در صفحه آپلود فونت نیستید می توانید با "
+"انتخاب گزینه لوکال در این صفحه نام آن را به لیست فونت ها اضافه کرده و سپس "
+"فایل فونتتان را جداگانه آپلود نمایید."
+
+#: ../inc/admin/addexternalfont.php:143
+msgid ""
+"Your metadata is incorrect. Example of correct meta data is : b or i4 or n4,"
+"i7 <br>"
+msgstr ""
+"اطلاعات اضافی وارد شده صحیح نیست. نمونه صحیح عبارت است از : b یا i4 یا i4,n7 "
+"<br>"
+
+#: ../inc/admin/addexternalfont.php:156 ../inc/admin/editfont.php:161
+msgid "Entered url is incorrect. A url must have a http at its begining."
+msgstr ""
+"آدرس وارد شده صحیح نیست. یک آدرس صحیح دارای عبارت http در ابتدایش می باشد."
+
+#: ../inc/admin/addexternalfont.php:163 ../inc/admin/addexternalfont.php:177
+msgid "Your font added to list."
+msgstr "فونت شما به لیست اضافه شد."
+
+#: ../inc/admin/addexternalfont.php:171
+msgid ""
+"Invalid google font name. A google font name can only contains this "
+"characters : [A-Z],[a-z],[1-9],[space]."
+msgstr ""
+"نام درج شده به عنوان یک فونت گوگل صحیح نیست. یک نام صحیح تناه می تواند شامل "
+"این کاراکترها باشد: [A-Z],[a-z],[1-9],[space] "
+
+#: ../inc/admin/addexternalfont.php:184
+msgid ""
+"Invalid local font name. A local font name can only contains this "
+"characters : [A-Z],[a-z],[1-9],[-],[_]."
+msgstr ""
+"نام درج شده به عنوان یک فونت گوگل صحیح نیست. یک نام صحیح تناه می تواند شامل "
+"این کاراکترها باشد: [A-Z],[a-z],[1-9],[_],[-]"
+
+#: ../inc/admin/addexternalfont.php:190
+msgid ""
+"The name of your local font added to list. Now you can upload its files in "
+"plugin-dir/fonts/local ."
+msgstr ""
+"نام فونت لوکال شما به لیست فونت ها اضافه شد. حال می توانید فایل های آن را در "
+"آدرس plugin-directory/fonts/local آپلود نمایید."
+
+#: ../inc/admin/addexternalfont.php:197 ../inc/admin/uploadfonts.php:191
+msgid "A font with this name already exists."
+msgstr "فونتی با این نام از قبل موجود است."
+
+#: ../inc/admin/addexternalfont.php:202 ../inc/admin/editfont.php:199
+msgid "Please enter a font name."
+msgstr "لطفا نام فونت را وارد نمایید."
+
+#: ../inc/admin/addselector.php:43 ../inc/admin/editselector.php:40
+#: ../inc/classes/class_afcstrings.php:145
+msgid "Add New Selector"
+msgstr "ایجاد سلکتور جدید"
+
+#: ../inc/admin/addselector.php:50 ../inc/admin/editselector.php:47
+msgid "Selector Name "
+msgstr "نام سلکتور"
+
+#: ../inc/admin/addselector.php:58 ../inc/admin/editselector.php:55
+msgid "Is It For ShortCode ?"
+msgstr "این سلکتور مخصوص شورت کد است؟"
+
+#: ../inc/admin/addselector.php:66 ../inc/admin/editselector.php:63
+#: ../inc/classes/class_fontslist.php:81
+msgid "Font Name"
+msgstr "نام فونت"
+
+#: ../inc/admin/addselector.php:74 ../inc/admin/editselector.php:71
+msgid "Force Change Font"
+msgstr "توسل به زور!"
+
+#: ../inc/admin/addselector.php:82 ../inc/admin/editselector.php:79
+msgid "Font Size"
+msgstr "سایز فونت"
+
+#: ../inc/admin/addselector.php:90 ../inc/admin/editselector.php:87
+msgid "Font Weight"
+msgstr "وزن فونت"
+
+#: ../inc/admin/addselector.php:98 ../inc/admin/editselector.php:95
+msgid "Font Style"
+msgstr "استایل فونت"
+
+#: ../inc/admin/addselector.php:106 ../inc/admin/editselector.php:103
+msgid "Text Color"
+msgstr "رنگ متن"
+
+#: ../inc/admin/addselector.php:114 ../inc/admin/editselector.php:111
+msgid "Text Decoration"
+msgstr "دکوراسیون متن"
+
+#: ../inc/admin/addselector.php:122 ../inc/admin/editselector.php:119
+msgid "Text Shadow"
+msgstr "سایه متن"
+
+#: ../inc/admin/addselector.php:130 ../inc/admin/editselector.php:127
+msgid "Selector Page Type"
+msgstr "نوع صفحه ی سلکتور"
+
+#: ../inc/admin/addselector.php:204 ../inc/admin/addselector.php:289
+#: ../inc/admin/addselector.php:293 ../inc/admin/addselector.php:297
+#: ../inc/admin/editselector.php:193 ../inc/admin/editselector.php:273
+#: ../inc/admin/editselector.php:277 ../inc/admin/editselector.php:281
+msgid "px"
+msgstr "پیکسل"
+
+#: ../inc/admin/addselector.php:218 ../inc/admin/addselector.php:238
+#: ../inc/admin/editselector.php:206 ../inc/admin/editselector.php:225
+#: ../inc/classes/class_afcstrings.php:106
+msgid "Unset"
+msgstr "هیچ"
+
+#: ../inc/admin/addselector.php:285 ../inc/admin/editselector.php:269
+msgid "If you dont want text shadow just left all fields blank."
+msgstr "اگر نیازی به خصوصیت Text Shadow ندارید همه ی فیلد ها را خالی بگذارید."
+
+#: ../inc/admin/addselector.php:288 ../inc/admin/editselector.php:272
+msgid "h-shadow  "
+msgstr "سایه افقی"
+
+#: ../inc/admin/addselector.php:292 ../inc/admin/editselector.php:276
+msgid "v-shadow  "
+msgstr "سایه عمودی"
+
+#: ../inc/admin/addselector.php:296 ../inc/admin/editselector.php:280
+msgid "blur  "
+msgstr "شفافیت"
+
+#: ../inc/admin/addselector.php:299 ../inc/admin/editselector.php:283
+msgid "color  "
+msgstr "رنگ"
+
+#: ../inc/admin/addselector.php:313 ../inc/admin/editselector.php:296
+msgid ""
+"If the selector is not for specific Page Types don't check anyone.<br> For "
+"finding id's take a look at <a href=\"http://codex.wordpress.org/"
+"FAQ_Working_with_WordPress#How_do_I_determine_a_Post.2C_Page.2C_Category.2C_Tag.2C_Link.2C_Link_Category.2C_or_User_ID.3F"
+"\">this link</a>.<br> Seperate each id with a \",\" character."
+msgstr ""
+"اگر قصد دارید سلکتوری که در حال ایجاد آن هستید، در همه ی صفحات نمایش داده "
+"شود، تیک هیچ گزینه ای را نگذارید. <br> برای یافتن آی دی مطالبتان به این <a "
+"href=\"http://codex.wordpress.org/"
+"FAQ_Working_with_WordPress#How_do_I_determine_a_Post.2C_Page.2C_Category.2C_Tag.2C_Link.2C_Link_Category.2C_or_User_ID.3F"
+"\">لینک</a> مراجعه نمایید."
+
+#: ../inc/admin/addselector.php:326 ../inc/admin/editselector.php:309
+msgid "(optional)"
+msgstr "(اختیاری)"
+
+#: ../inc/admin/addselector.php:346
+msgid ""
+"Here you can add new selector to the plugin selectors list.<br> "
+"<strong>Note1:</strong> If you have another selector with same name as this "
+"one and one of page types of that one match with current selector, plugin "
+"removes the existing and adds this one. So be careful when adding a selector "
+"that has selector name same as existing one."
+msgstr ""
+"در این بخش می توانید یک سلکتور جدید به لیست سلکتورهای افزونه اضافه "
+"نمایید<br>نکته: اگر سلکتوری هم نام با این سلکتور داشته باشید، که صفحه ی هدفش "
+"نیز با این سلکتور یکسان است، در این صورت افزونه سلکتور فعلی را به جای سلکتور "
+"قبلی درج می نماید."
+
+#: ../inc/admin/addselector.php:358 ../inc/admin/editselector.php:340
+msgid "Please fill in selectorname."
+msgstr "لطفا نام سلکتور را وارد نمایید."
+
+#: ../inc/admin/addselector.php:362 ../inc/admin/editselector.php:344
+msgid ""
+"Selector Name must starts with tag name, id or class name. Also using [,] at "
+"the selector name or using [.], [#] at the end of selector name is not "
+"allowed. "
+msgstr ""
+"نام سلکتور باید با نام تگ، آی دی یا کلاس شروع شود. همچنین استفاده از [,] در "
+"نام سلکتور و یا استفاده از [.], [#] در انتهای نام سلکتور غیر مجاز می باشد."
+
+#: ../inc/admin/addselector.php:367 ../inc/admin/editselector.php:349
+msgid "You can not left \"is it a short code\" field empty."
+msgstr ""
+"شما نمی توانید فیلد  \"این سلکتور مخصوص شورت کد است؟\" را خالی رها کنید."
+
+#: ../inc/admin/addselector.php:369 ../inc/admin/editselector.php:351
+msgid ""
+"For using this selector in a shortcode it might not have '.' , '#' or ' "
+"'(space) in the middle or end of its name. But using [.] or [#] in the begin "
+"is allowed. "
+msgstr ""
+
+#: ../inc/admin/addselector.php:388 ../inc/admin/editselector.php:370
+msgid "Selected Font for this selector is invalid."
+msgstr "فونت انتخابی برای این سلکتور نامعتبر است."
+
+#: ../inc/admin/addselector.php:395 ../inc/admin/editselector.php:377
+msgid "You have not selected any font to force it."
+msgstr "شما فونتی انتخاب نکرده اید ، که بخواهید به زور متوسل شوید!"
+
+#: ../inc/admin/addselector.php:401 ../inc/admin/editselector.php:383
+msgid "Fontsize is numeric, please type a positive number or left it empty."
+msgstr ""
+"ساایز فونت یک مقدار عددی است. لطفا یک مقدار مثبت وارد نمایید و یا آن را خالی "
+"رها کنید."
+
+#: ../inc/admin/addselector.php:409 ../inc/admin/editselector.php:391
+msgid "Font Weight is numeric."
+msgstr "وزن فونت یک مقدار عددی است."
+
+#: ../inc/admin/addselector.php:417 ../inc/admin/editselector.php:399
+msgid "Invalid font style."
+msgstr "استایل فونت انتخابی نامعتبر است."
+
+#: ../inc/admin/addselector.php:425 ../inc/admin/editselector.php:407
+msgid "The text color code is invalid."
+msgstr "کد رنگ متن نامعتبر است."
+
+#: ../inc/admin/addselector.php:432 ../inc/admin/editselector.php:414
+msgid "Selected decoration is invalid."
+msgstr "دکوراسیون انتخابی نامعتبر است"
+
+#: ../inc/admin/addselector.php:441 ../inc/admin/editselector.php:423
+msgid "Horizontal or vertical values in text shadow fields are invalid."
+msgstr "مقادیر وارد شده در فیلد های افقی یا عمودی برای سایه ی متن نامعتبر است."
+
+#: ../inc/admin/addselector.php:448 ../inc/admin/editselector.php:430
+msgid "Value in blur field of text shadow is invalid."
+msgstr "مقدار وارد شده برای میزان شفافیت سایه ی متن نامعتبر است."
+
+#: ../inc/admin/addselector.php:456 ../inc/admin/editselector.php:441
+msgid "Text shadow color code is invalid."
+msgstr "کد رنگ انتخابی برای سایه متن نامعتبر است."
+
+#: ../inc/admin/addselector.php:465 ../inc/admin/editselector.php:453
+msgid ""
+"Both the h-shadow and v-shadow of textshadow are required, left them empty "
+"or fill in both."
+msgstr ""
+"هر دو فیلد سایه ی افقی و سایه ی عمودی برای سایه متن اجباری می باشند، یا هردو "
+"را خالی رها کرده یا حداقل هردو را پرکنید."
+
+#: ../inc/admin/addselector.php:475 ../inc/admin/editselector.php:463
+msgid "Intered value in following field is incorrect:"
+msgstr "مقدار وارد شده در فیلد مقابل نامعتبر است: "
+
+#: ../inc/admin/addselector.php:475 ../inc/admin/editselector.php:463
+msgid " . example of correct value is: 1,2,3"
+msgstr ". نمونه ای از مقدار معتبر عبارت است از:  1,2,3"
+
+#: ../inc/admin/addselector.php:516
+msgid "New selector successfully saved."
+msgstr " سلکتور جدید با موفقیت اضافه گردید."
+
+#: ../inc/admin/editfont.php:127
+msgid ""
+"Here you can edit an existing external font. <br> <strong>Note1:</strong> If "
+"this is a google font or a font which is included in os, left the url empty."
+"( example: Tahoma, Helvetica, Droid Sans , etc ).\n"
+"\t<br> <strong>Note2:</strong> For more info about fvd (font variation "
+"description) please see plugin documentation."
+msgstr ""
+"در این بخش شما می توانید فونت خارجی ای که موجود است را ویرایش نمایید. <br> "
+"<strong>نکته 1: </strong> اگر قصد اضافه نمودن فونتی از سیستم عاملتان یا "
+"فونتی از گوگل را دارید، نیازی به تکمیل فیلد آدرس نیست.( به عنوان مثالی از "
+"فونت سیستم عامل می توان فونت Tahoma را نام برد ).<br> <strong>نکته 2: </"
+"strong> برای اطلاعات بیشتر در خصوص FVD (Font Variation Description) فایل "
+"راهنمای افزونه را مطالعه نمایید."
+
+#: ../inc/admin/editfont.php:148
+msgid ""
+"Your metadata is incorrect. Example of correct meta data is : b or i4 or n4,"
+"i7 "
+msgstr ""
+"اطلاعات اضافی وارد شده صحیح نیست. نمونه ای صحیح از آن عبارت است از: b یا i4 "
+"یا n4,i7"
+
+#: ../inc/admin/editfont.php:171 ../inc/admin/editfont.php:187
+msgid "Any changes successfully saved."
+msgstr "تغییرات ایجاد شده با موفقیت ذخیره شد."
+
+#: ../inc/admin/editfont.php:178
+msgid ""
+"Incorect google font name. A google font name can only contains this "
+"characters : [A-Z],[a-z],[1-9],[space]."
+msgstr ""
+"نام درج شده به عنوان یک فونت گوگل صحیح نیست. یک نام صحیح تناه می تواند شامل "
+"این کاراکترها باشد: [A-Z],[a-z],[1-9],[space]"
+
+#: ../inc/admin/editfont.php:194
+msgid ""
+"You can not edit the font name. But you can remove this font from list and "
+"add it with diffrent name."
+msgstr ""
+"متاسفانه امکان ویرایش نام فونت در این بخش وجود ندارد. اما می توانید فونتتان "
+"را حذف کرده و از اول اضافه نمایید."
+
+#: ../inc/admin/editselector.php:329
+msgid ""
+"Here you can edit an existing selector and add it as a new selector.<br> "
+"<strong>Note1:</strong> If you have another selector with same name as this "
+"one and one of page types of that one match with current selector, plugin "
+"removes the existing and adds this one. So be careful when editing selector "
+"name or pagetypes.<br><strong>Note2:</strong> If you change the pagetype and "
+"choose pagetype(s) other than current pagetype(s), Plugin adds the selector "
+"as new selector. "
+msgstr ""
+"در این بخش می توانید یک سلکتور موجود را ویرایش نمایید. <br><strong>نکته 1: </"
+"strong> اگر سلکتوری هم نام با این سلکتور داشته باشید، که صفحه ی هدفش نیز با "
+"این سلکتور یکسان است، در این صورت افزونه سلکتور فعلی را به جای سلکتور قبلی "
+"درج می نمایید. <br><strong>نکته 2 : </strong> اگر تنها صفحه هدف را تغییر "
+"دهید، در این صورت افزونه ویرایش های شما را به عنوان یک سلکتور جدید درج می "
+"نماید.  "
+
+#: ../inc/admin/editselector.php:510
+msgid "Your edit's successfully saved."
+msgstr "ویرایش های شما با موفقیت ذخیره شدند."
+
+#: ../inc/admin/general.php:7 ../inc/classes/class_afcstrings.php:136
+#: ../inc/classes/class_afcstrings.php:143
+msgid "General Options"
+msgstr "تنظیمات عمومی "
+
+#: ../inc/admin/general.php:42
+msgid "Genaral Options"
+msgstr "تنظیمات عمومی"
+
+#: ../inc/admin/general.php:49
+msgid "Load editor"
+msgstr "بارگزاری ویرایشگر"
+
+#: ../inc/admin/general.php:68
+msgid ""
+" Activate frontend editor ( Can be accessed from its button in admin bar. "
+"Only for administrator )"
+msgstr "فعال سازی ادیتور افزونه ( تنها مدیریت به آن دسترسی دارد )"
+
+#: ../inc/admin/general.php:75
+msgid "Here you can see general plugin options."
+msgstr "در این بخش می توانید تنظیمات عمومی افزونه را مشاهده نمایید."
+
+#: ../inc/admin/general.php:86
+msgid "Your changes saved."
+msgstr "تغییرات شما ذخیره شد."
+
+#: ../inc/admin/import-export.php:42
+msgid "Import / Export Settings"
+msgstr "تنظیمات وروردی / خروجی گیری"
+
+#: ../inc/admin/import-export.php:49
+msgid "Export data"
+msgstr "استخراج اطلاعات"
+
+#: ../inc/admin/import-export.php:57
+msgid "Ready to use stylesheet"
+msgstr "استایل آماده جهت استفاده"
+
+#: ../inc/admin/import-export.php:65
+msgid "Import data"
+msgstr "بارگزاری اطلاعات"
+
+#: ../inc/admin/import-export.php:82
+msgid "These are your selectors."
+msgstr "این ها سلکتورهای شما هستند."
+
+#: ../inc/admin/import-export.php:86
+msgid ""
+"These are your fonts. Local fonts must have files, and you must move them "
+"too. Font files are located in plugin-dir/fonts/local ."
+msgstr ""
+"اینها فونت های شما هستند. فونت های لوکال وابسته به فایلهایشان می باشند، و در "
+"صورت انتقال باید فونت ها را نیز با افزونه منتقل نمایید. محل ذخیره سازی فونت "
+"ها در پوشه ی plugin-directory/fonts/local می باشد."
+
+#: ../inc/admin/import-export.php:101
+msgid ""
+"This is a ready to use stylesheet for inserting directly in your theme style "
+"file . keep in mind you must edit links to font files."
+msgstr ""
+"این یک استایل آماده جهت استفاده در سایتتان می باشد. به خاطر داشته باشید که "
+"شما باید لینک فایل ها را ویرایش نمایید."
+
+#: ../inc/admin/import-export.php:105
+msgid ""
+"This field contains link to your used google fonts.(if you used google "
+"fonts, insert it in the head tag of your theme. )"
+msgstr ""
+"این فیلد حاوی لینکی به فونتهای گوگل مورد استفاده ی شما می باشد. (اگر از فونت "
+"های گوگل استفاده کرده اید باید این لینک را نیز در بخش هد سایتتان قرار دهید.)"
+
+#: ../inc/admin/import-export.php:115
+msgid "To import selectors paste your data here."
+msgstr "برای بارگزاری سلکتورها اطلاعاتتان را در این قسمت کپی کنید."
+
+#: ../inc/admin/import-export.php:120
+msgid "To import fonts paste your data here."
+msgstr "برای بارگزاری فونت هایتان آنها را در این قسمت کپی کنید."
+
+#: ../inc/admin/import-export.php:131
+msgid ""
+"Here you can easily import , export plugin settings . Also you can export an "
+"generated style ( you can insert it directly in your styles, so you don't "
+"need this plugin in another wp installations ).<br>"
+msgstr ""
+"در این بخش می توانید از سلکتورهای افزونه خروجی تهیه نمایید. همچین می توانید. "
+"از سلکتورها در قالب استایلی آماده خروجی تهیه نمایید. (می توانید استایل تهیه "
+"شده را مستقیما در سایتتان استفاده نمایید. که در این صورت نیازی به این پلاگین "
+"در آن سایت ندارید.)"
+
+#: ../inc/admin/import-export.php:132
+msgid ""
+"<strong style=\"color:red;\">Warning:</strong> be aware of submitting this "
+"form with empty data in import textarea. doing this will removes all your "
+"saved data"
+msgstr ""
+"<strong style=\"color:red;\">هشدار</strong> اگر دیتایی برای بارگزاری در "
+"افزونه وارد نکرده اید، از فشردن کلید انتهای صفحه خودداری نمایید. چراکه این "
+"کار باعث حذف همه سلکتورها خواهد شد."
+
+#: ../inc/admin/import-export.php:156 ../inc/admin/import-export.php:182
+msgid " Entry(s) successfully imported."
+msgstr " مورد با موفقیت بارگزاری شدند."
+
+#: ../inc/admin/import-export.php:160 ../inc/admin/import-export.php:165
+#: ../inc/admin/import-export.php:186 ../inc/admin/import-export.php:191
+msgid "Your data is incorrect."
+msgstr "اطلاعات شما صحیح نیست"
+
+#: ../inc/admin/import-export.php:200
+msgid "All your selectors successfully removed."
+msgstr "همه ی سلکتورهای شما با موفقیت حذف شدند."
+
+#: ../inc/admin/uploadfonts.php:42
+msgid "Upload font"
+msgstr "آپلود فونت"
+
+#: ../inc/admin/uploadfonts.php:49
+msgid "Upload an eot file"
+msgstr "فایل با فرمت eot"
+
+#: ../inc/admin/uploadfonts.php:57
+msgid "Upload an ttf file"
+msgstr "فایل با فرمت ttf"
+
+#: ../inc/admin/uploadfonts.php:65
+msgid "Upload an woff file"
+msgstr "فایل با فرمت woff"
+
+#: ../inc/admin/uploadfonts.php:73
+msgid "Upload an svg file"
+msgstr "فایل با فرمت SVG"
+
+#: ../inc/admin/uploadfonts.php:133
+msgid ""
+"Here you can upload your own fonts. After upload process completes you must "
+"press save changes so we can validate your uploaded files ( All four fields "
+"are required. If you don't have one or more of this formats , you can "
+"convert your font using online font converters ).<br><strong>Note1:</strong> "
+"We use font filename as fontname. <br><strong>Note2:</strong> you can only "
+"use this characters in a font name: [A-Z] and [a-z] and [0-9] and [-]. "
+msgstr ""
+"در این بخش می توانید فونت خودتان را آپلود نمایید. پس از آپلود فایل ها و "
+"انتخاب آنها در فیلدهای مورد نظر باید کلید ذخیره تغییرات را فشار دهید تا "
+"پلاگین فایل را پوشه ی خود انتقال دهد. ( تمامی 4 فیلد الزامی می باشند. اگر یا "
+"چند مورد را در اختیار ندارید می توانید از کانورتر های آنلاین برای تبدیل فرمت "
+"فونت استفاده نمایید. ) <br><strong>نکته 1: </strong> افزونه از نام فایل "
+"آپلود شده به عنوان نام فونت استفاده می نماید. <br><strong>نکته2: </"
+"strong>شما تنها مجاز به استفاده از این کاراکترها در نام فونت می باشید: [a-z],"
+"[A-Z],[0-9],[-]"
+
+#: ../inc/admin/uploadfonts.php:169
+msgid "Link address of file with this format is incorrect : "
+msgstr "لینک فایل با فرمت مقابل صحیح نیست: "
+
+#: ../inc/admin/uploadfonts.php:174
+msgid "You have inserted incorrect file format in field : "
+msgstr "فرمت فایل انتخاب شده در فیلد مقابل صحیح نیست: "
+
+#: ../inc/admin/uploadfonts.php:180
+msgid "Name of file with format eot is diffrent than file with format : "
+msgstr ""
+"نام فایل انتخاب شده با فرمت eot با فایل انتخاب شده با فرمت مقابل مطابقت "
+"ندارد: "
+
+#: ../inc/admin/uploadfonts.php:185
+msgid "Field for this file format is empty : "
+msgstr "فیلد فرمت مقابل خالی است: "
+
+#: ../inc/admin/uploadfonts.php:196
+msgid "Name of file with format eot has wrong characters."
+msgstr "نام فایل با فرمت eot دارای کاراکترهایی غیرمجاز می باشد."
+
+#: ../inc/admin/uploadfonts.php:201
+msgid "Please insert a eot file in field with format eot."
+msgstr "لطفا یک فایل با فرمت eot در فیلد با این نام درج نمایید."
+
+#: ../inc/admin/uploadfonts.php:206
+msgid ""
+"AFC fonts folder not exists, please make sure: plugins-directory/advanced-"
+"font-changer/fonts/local folder exists"
+msgstr ""
+"فولدر فونت های AFC موجود نیست! لطفا اطمینان حاصل نمایید پوشه ی مقال موجود "
+"است: plugins-directory/advanced-font-changer/fonts/local"
+
+#: ../inc/admin/uploadfonts.php:227
+msgid "Your font successfully saved."
+msgstr "فونت شما با موفقیت اضافه گردید."
+
+#: ../inc/afc-ajax.php:24 ../inc/afc-ajax.php:29 ../inc/afc-ajax.php:37
+msgid "Operation Successfull !"
+msgstr "عملیات موفقیت آمیز بود !"
+
+#: ../inc/afc-ajax.php:32 ../inc/afc-ajax.php:40 ../inc/afc-ajax.php:55
+msgid "Operation Failed !"
+msgstr "اوه ، عملیات با شکست مواجه شد !"
+
+#: ../inc/classes/class_afcselectors.php:489
+#: ../inc/classes/class_afcstrings.php:119
+msgid "Font Family: "
+msgstr "خانواده فونت: "
+
+#: ../inc/classes/class_afcselectors.php:490
+#: ../inc/classes/class_afcstrings.php:120
+msgid "Font Size: "
+msgstr "سایز فونت: "
+
+#: ../inc/classes/class_afcselectors.php:491
+#: ../inc/classes/class_afcstrings.php:121
+msgid "Font Weight: "
+msgstr "وزن فونت: "
+
+#: ../inc/classes/class_afcselectors.php:492
+#: ../inc/classes/class_afcstrings.php:122
+msgid "Font Style: "
+msgstr "استایل فونت: "
+
+#: ../inc/classes/class_afcselectors.php:493
+#: ../inc/classes/class_afcstrings.php:123
+msgid "Text Color: "
+msgstr "رنگ متن: "
+
+#: ../inc/classes/class_afcselectors.php:494
+#: ../inc/classes/class_afcstrings.php:124
+msgid "Text Decoration: "
+msgstr "دکوراسیون متن: "
+
+#: ../inc/classes/class_afcselectors.php:495
+#: ../inc/classes/class_afcstrings.php:125
+msgid "Text Shadow: "
+msgstr "سایه ی متن: "
+
+#: ../inc/classes/class_afcstrings.php:15
+#: ../inc/classes/class_afcstrings.php:27
+msgid "Home Page"
+msgstr "صفحه اصلی"
+
+#: ../inc/classes/class_afcstrings.php:16
+#: ../inc/classes/class_afcstrings.php:29
+msgid "Archive"
+msgstr "آرشیو"
+
+#: ../inc/classes/class_afcstrings.php:17
+msgid "Category(s) Archive"
+msgstr "آرشیو دسته ها"
+
+#: ../inc/classes/class_afcstrings.php:18
+msgid "Author Page(s)"
+msgstr "صفحات نویسندگان"
+
+#: ../inc/classes/class_afcstrings.php:19
+msgid "Single Post(s)"
+msgstr "صفحه تک نوشته"
+
+#: ../inc/classes/class_afcstrings.php:20
+msgid "Page(s)"
+msgstr "هر صفحه ای"
+
+#: ../inc/classes/class_afcstrings.php:21
+msgid "Tag(s) Archive"
+msgstr "آرشیو برچسب ها"
+
+#: ../inc/classes/class_afcstrings.php:22
+msgid "This Tag (s) (For posts)"
+msgstr "این برچسب ها (برای مطالب)"
+
+#: ../inc/classes/class_afcstrings.php:28
+msgid "Category"
+msgstr "دسته ها"
+
+#: ../inc/classes/class_afcstrings.php:30
+msgid "Author"
+msgstr "نویسنده"
+
+#: ../inc/classes/class_afcstrings.php:31
+msgid "Single Post"
+msgstr "تک نوشته"
+
+#: ../inc/classes/class_afcstrings.php:32
+msgid "Page"
+msgstr "هر صفحه ای"
+
+#: ../inc/classes/class_afcstrings.php:33
+msgid "Tag Archive"
+msgstr "آرشیو برچسب"
+
+#: ../inc/classes/class_afcstrings.php:34
+msgid "Has Tag"
+msgstr "هر مطلب دارای برچسب"
+
+#: ../inc/classes/class_afcstrings.php:83
+msgid "Generated Selector: "
+msgstr "سلکتور تولید شده: "
+
+#: ../inc/classes/class_afcstrings.php:84
+msgid "Page Type:"
+msgstr "نوع صفحه: "
+
+#: ../inc/classes/class_afcstrings.php:85
+msgid "To use in all pages don't active anyone"
+msgstr "برای استفاده در همه صفحات هیچ یک را فعال نکنید"
+
+#: ../inc/classes/class_afcstrings.php:86
+msgid "Unlock"
+msgstr "باز کردن"
+
+#: ../inc/classes/class_afcstrings.php:87
+msgid "Save"
+msgstr "ذخیره"
+
+#: ../inc/classes/class_afcstrings.php:88
+msgid "Switch Tab"
+msgstr "برو به تب بعد"
+
+#: ../inc/classes/class_afcstrings.php:89
+msgid "No element selected."
+msgstr "المانی انتخاب نشده است."
+
+#: ../inc/classes/class_afcstrings.php:90
+msgid ""
+"Server returned an invalid output. Maybe you are not logged in, or your user "
+"has no sufficient access to edit site theme. Here is server response"
+msgstr ""
+"سرور یک خروجی نامعتبر ایجاد کرده است. ممکن است شما در وبسایتتان لاگین نکرده "
+"باشید، ویا دسترسی لازم برای ویرایش پوست سایت را ندارید. پاسخ سرور "
+
+#: ../inc/classes/class_afcstrings.php:91
+msgid "Your Changes Saved!"
+msgstr "تغییرات شما ذخیره شد!"
+
+#: ../inc/classes/class_afcstrings.php:92
+msgid ""
+"You are not logged in, or your user has no sufficient access to edit site "
+"theme."
+msgstr ""
+"شما وارد نشده اید و یا نام کاربری شما دسترسی لازم برای ویرایش پوسته سایت را "
+"ندارد."
+
+#: ../inc/classes/class_afcstrings.php:93
+msgid "Unable To Save."
+msgstr "امکان ذخیره سازی وجود ندارد."
+
+#: ../inc/classes/class_afcstrings.php:94
+msgid "You have reached body tag !. There is no more parents for this tag."
+msgstr "شما به تگ body رسیده اید !. تگ والد دیگری وجود ندارد."
+
+#: ../inc/classes/class_afcstrings.php:95
+msgid "No data to save . Please first make some changes!"
+msgstr "اطلاعاتی جهت ذخیره سازی وجود ندارد. ابتدا تغییراتی ایجاد نمایید!"
+
+#: ../inc/classes/class_afcstrings.php:96
+msgid "Selector Successfully Removed!"
+msgstr "سلکتور با موفقیت حذف گردید!"
+
+#: ../inc/classes/class_afcstrings.php:97
+msgid "Reset This"
+msgstr "حذف این مورد"
+
+#: ../inc/classes/class_afcstrings.php:98
+msgid "Requested font name not exists."
+msgstr "فونت درخواستی موجود نیست."
+
+#: ../inc/classes/class_afcstrings.php:99
+msgid "Force Change"
+msgstr " توسل به زور!"
+
+#: ../inc/classes/class_afcstrings.php:100
+msgid "No font is selected to be forced !"
+msgstr "فونت برای اجبار به تنظیم شدن وجود ندارد!"
+
+#: ../inc/classes/class_afcstrings.php:101
+msgid "Choose Property: "
+msgstr "انتخاب خصوصیت: "
+
+#: ../inc/classes/class_afcstrings.php:102
+msgid "H-Shadow: "
+msgstr "سایه افقی: "
+
+#: ../inc/classes/class_afcstrings.php:103
+msgid "V-Shadow: "
+msgstr "سایه عمودی: "
+
+#: ../inc/classes/class_afcstrings.php:104
+msgid "Blur: "
+msgstr "شفافیت: "
+
+#: ../inc/classes/class_afcstrings.php:105
+msgid "Color: "
+msgstr "رنگ: "
+
+#: ../inc/classes/class_afcstrings.php:107
+msgid "None"
+msgstr "هیچ"
+
+#: ../inc/classes/class_afcstrings.php:108
+msgid "Under Line"
+msgstr "خط زیر"
+
+#: ../inc/classes/class_afcstrings.php:109
+msgid "Over Line"
+msgstr "خط بالای متن"
+
+#: ../inc/classes/class_afcstrings.php:110
+msgid "Line Through"
+msgstr "خط بر متن"
+
+#: ../inc/classes/class_afcstrings.php:111
+msgid "Return"
+msgstr "بازگشت"
+
+#: ../inc/classes/class_afcstrings.php:112
+msgid "Go To Selector Properties"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:113
+msgid "Normal"
+msgstr "عادی"
+
+#: ../inc/classes/class_afcstrings.php:114
+msgid "Italic"
+msgstr "مورب"
+
+#: ../inc/classes/class_afcstrings.php:115
+msgid "Oblique"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:129
+msgid "Clear"
+msgstr "پاک سازی"
+
+#: ../inc/classes/class_afcstrings.php:130
+msgid "Default"
+msgstr "پیشفرض"
+
+#: ../inc/classes/class_afcstrings.php:131
+msgid "Select Color"
+msgstr "انتخاب رنگ"
+
+#: ../inc/classes/class_afcstrings.php:138
+msgid "Upload Font"
+msgstr "آپلود فونت"
+
+#: ../inc/classes/class_fontslist.php:15
+msgid "font"
+msgstr "فونت"
+
+#: ../inc/classes/class_fontslist.php:16
+msgid "fonts"
+msgstr "فونت"
+
+#: ../inc/classes/class_fontslist.php:42
+msgid "No Fonts Found."
+msgstr "فونتی یافت نشد."
+
+#: ../inc/classes/class_fontslist.php:82
+msgid "Status"
+msgstr "وضعیت"
+
+#: ../inc/classes/class_fontslist.php:83
+msgid "Meta Data"
+msgstr "اطلاعات اضافی"
+
+#: ../inc/classes/class_fontslist.php:119
+msgid "Edit"
+msgstr "ویرایش"
+
+#: ../inc/classes/class_fontslist.php:170
+msgid " Selected fonts has been deleted. "
+msgstr "فونت های انتخابی با موفقیت حذف شدند."
+
+#: ../inc/classes/class_fontslist.php:174
+msgid "Can not access fonts array. "
+msgstr "امکان دسترسی به آرایه ی فونت ها وجود ندارد."
+
+#: ../inc/classes/class_selectorslist.php:16
+#: ../inc/classes/class_selectorslist.php:71
+msgid "Selector"
+msgstr "سلکتور"
+
+#: ../inc/classes/class_selectorslist.php:17
+msgid "Selectors"
+msgstr "سلکتور"
+
+#: ../inc/classes/class_selectorslist.php:44
+msgid "No Selector Found."
+msgstr "سلکتوری یافت نشد."
+
+#: ../inc/classes/class_selectorslist.php:72
+msgid "PageType"
+msgstr "نوع صفحه"
+
+#: ../inc/classes/class_selectorslist.php:73
+msgid "Properties"
+msgstr "خصوصیت ها"
+
+#: ../inc/classes/class_selectorslist.php:145
+msgid " Selector's has been deleted. "
+msgstr "سلککتور با موفقیت حذف شدند."
+
+#: ../inc/classes/class_selectorslist.php:149
+msgid " Unable to access selectors array. "
+msgstr "امکان دسترسی به آرایه ی سلکتور ها وجود ندارد."
+
+#: ../inc/classes/class_wp-list-table.php:184
+msgid "No items found."
+msgstr "آیتمی یافت نشد."
+
+#: ../inc/classes/class_wp-list-table.php:308
+msgid "Bulk Actions"
+msgstr "عملیات کلی"
+
+#: ../inc/classes/class_wp-list-table.php:318
+msgid "Apply"
+msgstr "تایید"
+
+#: ../inc/classes/class_wp-list-table.php:402
+msgid "All dates"
+msgstr "همه تاریخ ها"
+
+#. translators: 1: month name, 2: 4-digit year
+#: ../inc/classes/class_wp-list-table.php:415
+#, php-format
+msgid "%1$s %2$d"
+msgstr ""
+
+#: ../inc/classes/class_wp-list-table.php:431
+msgid "List View"
+msgstr "نمایش لیستی"
+
+#: ../inc/classes/class_wp-list-table.php:432
+msgid "Excerpt View"
+msgstr "نمایش خلاصه"
+
+#: ../inc/classes/class_wp-list-table.php:458
+#, php-format
+msgid "%s pending"
+msgstr "%s در انتظار"
+
+#: ../inc/classes/class_wp-list-table.php:713
+msgid "Select All"
+msgstr "انتخاب همه"
+
+#: ../inc/printeditor.php:83
+msgid "AFC Editor"
+msgstr "ویرایشگر AFC"
+
+#: ../inc/printeditor.php:133
+msgid "No Font"
+msgstr "بدون فونت"
+
+#: ../inc/printeditor.php:265
+msgid "AFC Alert"
+msgstr "هشدار"
+
+#: ../inc/printeditor.php:269
+msgid "Default Message"
+msgstr "پیام پیشفرض"
+
+#: ../inc/printeditor.php:273
+msgid "Ok"
+msgstr "قبول"
+
+#: ../inc/printeditor.php:277
+msgid "Toggle Editor"
+msgstr "مخفی کردن ویرایشگر"
+
+#~ msgid "Please fill in selectorname.<br>"
+#~ msgstr "لطفا نام سلکتور را وارد نمایید. <br>"
+
+#~ msgid "You have not selected any font to force it.<br>"
+#~ msgstr "شما فونتی انتخاب نکرده اید ، که بخواهید به زور متوسل شوید! <br>"
+
+#~ msgid "Selector Page ( Left empty to select all )"
+#~ msgstr "نوع صفحه هدف (اگر نمیدانید چیست خالی بگذارید)"
+
+#~ msgid ""
+#~ "Fontname could not be empty please select a font or white entry to none."
+#~ "<br>"
+#~ msgstr ""
+#~ "نام فونت نمی تواند خالی باشد!. لطفا یا یک فونت را انتخاب نمایید یا گزینه "
+#~ "ی بدون متن را انتخاب نمایید. <br>"
+
+#~ msgid ""
+#~ "You can not add a selector without font name and font size. please fill "
+#~ "at least one of them.<br>"
+#~ msgstr ""
+#~ "شما نمی توانید سلکتوری ایجاد نمایید که نه فونت خاصی دارد و نه سایز سایز "
+#~ "خاصی !. لطفا حداقل یکی از آنها را تکمیل نمایید. <br>"
+
+#~ msgid ""
+#~ "This selector already exits, you can edit it from manage selectors.<br>"
+#~ msgstr ""
+#~ "چنین سلکتور از قبل موجود است، می توانید ان را از بخش مدیریت سلکتورها "
+#~ "ویرایش نمایید. <br>"
+
+#~ msgid ""
+#~ "You can not have a selector that has no font name and font size. please "
+#~ "fill at least one of them.<br>"
+#~ msgstr ""
+#~ "شما نمی توانید سلکتوری ایجاد نمایید که نه فونت خاصی دارد و نه سایز سایز "
+#~ "خاصی !. لطفا حداقل یکی از آنها را تکمیل نمایید. <br>"
+
+#~ msgid "All data has been reset."
+#~ msgstr "تمامی اطلاعات با موفقیت حذف شدند."
+
+#~ msgid "You can not delete default fonts. "
+#~ msgstr "امکان حذف فونت با وضعیت پیشفرض وجود ندارد."
+
+#~ msgid " Selected fonts(non default) has been deleted. "
+#~ msgstr "فونت انتخاب شده ( غیر پیشفرض ) با موفقیت حذف شدند."
+
+#~ msgid "Forced"
+#~ msgstr "توسل به زور"
+
+#~ msgid "Taxonomy"
+#~ msgstr "نوع صفحه"

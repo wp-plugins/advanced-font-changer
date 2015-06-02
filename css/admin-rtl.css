@@ -1,0 +1,25 @@
+﻿#wpbody {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.afc-main h2.afc-head {
+    margin-left: 0px;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+
+.afc-main h2.afc-head::before {
+    margin-left: 0px;
+    margin-right: -65px;
+}
+
+input{
+    direction:ltr;
+}
+
+.form-table th {
+    border-right: none;
+    border-left: 2px solid #E2F3E9;
+}
+

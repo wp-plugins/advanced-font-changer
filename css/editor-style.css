@@ -1,0 +1,616 @@
+/* Editor fonts */
+@font-face {
+	font-family: 'Icons';
+	src: url("../fonts/editor/icons.eot");
+	src: url("../fonts/editor/icons.svg#icons") format('svg'), 
+	url("../fonts/editor/icons.eot?#iefix") format('embedded-opentype'),
+	url("../fonts/editor/icons.woff") format('woff'), 
+	url("../fonts/editor/icons.ttf") format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+@font-face {
+	font-family: 'lato';
+	src: url("../fonts/editor/lato.eot");
+	src: url("../fonts/editor/lato.svg#icons") format('svg'), 
+	url("../fonts/editor/lato.eot?#iefix") format('embedded-opentype'),
+	url("../fonts/editor/lato.woff") format('woff'), 
+	url("../fonts/editor/lato.ttf") format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+	font-family: 'lato';
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    line-height: 1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+nav ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+input, select {
+    vertical-align: middle;
+}
+
+/* Editor main wrapper */
+.afcwrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border:4px solid #D95C5C;
+    border-radius: 8px;
+}
+
+.sitecontainer {
+    position:fixed;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+}
+
+.afctoolbox{
+	height: 100px;
+}
+
+.afcframe {
+    width: 100%;
+    height: 100%;
+	border-radius: 4px;
+}
+
+
+/* Main plugin editor wrapper */
+.afcwrap{
+	width:510px;
+	height:210px;
+	border-radius: 6px;
+	background-color: #fff;
+	border: 2px solid #1ABC9C !important;
+	z-index: 99999;
+	top: 39px;
+	left: 4px;
+`	display: none;
+	padding:4px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-o-user-select: none;
+	user-select: none;
+	direction: ltr;
+	position: fixed;
+    display: none;
+}
+
+.afcwrap h3{
+	font-family: lato,Tahoma,Arial,sans-serif;
+	font-size: 14px !important;
+	margin:0;
+	padding: 5px 0;
+	font-weight:normal;
+	font-weight:bold;
+	color: #34495E;
+}
+
+.afcwrap hr {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0px none;
+    height: 1px;
+    margin-bottom: 8px;
+	margin-top: 8px;
+}
+/* Plugin editor panels */
+.afcwrap .panelright{
+	width: 50px;
+	float: right;
+}
+
+.afcwrap .panelleft{
+	width: 450px;
+	float: left;
+	overflow: hidden;
+}
+
+/* groups */
+.afcwrap .groups{
+	width: 900px;
+	height: 210px;
+	margin-left: 0;
+}
+
+.afcwrap  .group1, .afcwrap  .group2{
+	position: absolute;
+	width: 450px;
+	height: 205px;
+	overflow: visible;
+}
+
+.afcwrap  .group2{
+	overflow: visible;
+	position: absolute;
+	width: 450px;
+	height: 205px;
+	display:none;
+}
+
+/* property list table styles */
+.afcwrap .controlset{
+	display:block;
+	width:100%;
+}
+
+.afcwrap .group2 .controlset{
+	margin-bottom: 4px;
+}
+
+.afcwrap .controlset .afchalf{
+	width: 47%;
+	margin-left: 2px;
+}
+
+.afcwrap .dataselect h3{
+    width: 145px;
+    float: left;
+    margin-top: 10px;
+}
+
+.databox{
+	display: block;
+	width: 450px;
+	height: 137px;
+    border-top: 2px dashed #DFDFDF;
+}
+
+.afcwrap table{
+	color: rgb(43, 43, 43);
+    width: 429px;
+    perspective-origin: 225px 10.5px;
+    transform-origin: 225px 10.5px;
+    border: none;
+    border-spacing: 0px 0px;
+    font: normal normal 300 normal 14px/15.3999996185303px lato, Tahoma, Arial, sans-serif;
+    margin: 0px 0px 24px;
+    outline: rgb(43, 43, 43) none 0px;
+}
+
+.afcwrap tbody{
+	color: rgb(43, 43, 43);
+    vertical-align: baseline;
+    width: 429px;
+    perspective-origin: 214.5px 0px;
+    transform-origin: 214.5px 0px;
+    border: none;
+    font: normal normal 300 normal 14px/15.3999996185303px lato, Tahoma, Arial, sans-serif;
+    outline: rgb(43, 43, 43) none 0px;
+}
+
+.afcwrap tr{
+    color: rgb(43, 43, 43);
+    display: none;
+    height: auto;
+    position: absolute;
+    width: auto;
+    align-self: stretch;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border: none;
+    font: normal normal 300 normal 14px/15.3999996185303px lato, Tahoma, Arial, sans-serif;
+    outline: rgb(43, 43, 43) none 0px;
+	padding: 2px 0px 4px 0px;
+}
+
+.afcwrap th{
+    color: rgb(43, 43, 43);
+    height: auto;
+    text-align: left;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border: none;
+    font: normal normal bold normal 14px/15.3999996185303px lato, Tahoma, Arial, sans-serif;
+    outline: rgb(43, 43, 43) none 0px;
+    vertical-align:middle;
+    min-width: 110px !important;
+}
+
+.afcwrap td {
+    color: rgb(43, 43, 43);
+    height: auto;
+    text-align: left;
+    width: auto;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border: none;
+    font: normal normal normal normal 14px/15.3999996185303px lato, Tahoma, Arial, sans-serif;
+    outline: rgb(43, 43, 43) none 0px;
+}
+
+.afcwrap tr.fontfamily, .afcwrap tr.textshadow tr{
+	display: block;
+}
+
+.afcwrap tr.textshadow tr{
+	display: block;
+	position: relative;
+	
+}
+
+.afcwrap tr.textshadow > th{
+	min-width: 110px !important;
+}
+
+.afcwrap  .innertable{
+	position: absolute;
+	width: 340px
+}
+
+.afcwrap  .innertable th{
+	width: 90px !important;
+	vertical-align: middle;
+    font-size: 14px;
+    padding-top: 4px;
+}
+
+/* Generated selector style */
+.afcwrap .afcselectedelement {
+    width: 446px;
+    height: 55px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px solid #f3f3f3 !important;
+    border-radius: 3px;
+	padding: 3px 0 0 1px;
+	font-style: normal !important;
+}
+
+.afcwrap .tagname{
+	border: 1px solid rgb(26, 188, 156);
+	background-color: rgb(220, 234, 211);
+	padding: 4px 4px 5px;
+	margin-bottom: 1px;
+	font-weight: normal;
+    line-height: 2;
+    font-size: 15px;
+}
+
+.afcwrap .tagname span{
+	margin-left: 4px;
+	padding: 2px 0px 3px;
+}
+
+.afcwrap .tagclass{
+	border: 1px solid red;
+	background-color: rgb(245, 208, 208);
+}
+
+.afcwrap .tagid{
+	border: 1px solid #4DB5E6;
+	background-color: #B3E4EF;
+}
+
+.afcwrap .afcselectedelement .button{
+	margin: 2px 2px 2px 3px;
+	border-radius: 0px !important;
+}
+
+.afcwrap .afcselectedelement .addparenttag{
+	padding: 5px 5px 7px !important;
+}
+
+.afcwrap .afcselectedelement .removethistag, .afcwrap .afcselectedelement .regenclasses{
+	padding: 3px 3px 5px !important;
+}
+
+.afcwrap .afcselectedelement .plus, .afcwrap .afcselectedelement .minus{
+	margin-top: 0.24em !important;
+	font-size: 14px;
+}
+
+.afcwrap .afcselectedelement .removeid, .afcwrap .afcselectedelement .removethisclass{
+	padding: 1px 2px 3px !important;
+}
+
+/* Font selection drop down in editor */
+.fontselection{
+	border: 1px solid #ccc !important;
+}
+
+.afcui.dropdown .menu > .item {
+    font-size: 90%;
+}
+
+/* Font size change buttons in editor */
+.afcwrap .increasethesize, .afcwrap .decreasethesize, .afcwrap .numlbl, .afcwrap .dis{
+	float: left;
+}
+
+.afcwrap .numlbl, .afcwrap .dis{
+	margin-top: 9px;
+	margin-right: 2px;
+}
+
+.afcwrap .increasethesize, .afcwrap .decreasethesize {
+	padding: 0.4em .3em .3em !important;
+}
+
+/* Operational buttons in editor */
+.afcwrap  .afc-op-button{
+	margin: .34em 0px;
+}
+
+/* Modifying semantic ui styles */
+/* --Changing switch size-- */
+.afcwrap .afcui.toggle.checkbox .box:after, 
+.afcwrap .afcui.toggle.checkbox label:after {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.afcwrap .afcui.toggle.checkbox input[type="checkbox"]:checked ~ .box:after, 
+.afcwrap .afcui.toggle.checkbox input[type="checkbox"]:checked ~ label:after, 
+.afcwrap .afcui.toggle.checkbox input[type="radio"]:checked ~ .box:after, 
+.afcwrap .afcui.toggle.checkbox input[type="radio"]:checked ~ label:after {
+    left: 1.3rem;
+}
+
+.afcwrap .afcui.toggle.checkbox .box, .afcwrap .afcui.toggle.checkbox label {
+    padding-left: 2.5rem;
+    color: rgba(0, 0, 0, 0.8);
+    min-height: 0.5rem;
+	font-weight: normal;
+	color: rgba(54, 54, 54, 0.8);
+    font-size: 15px;
+}
+
+.afcwrap .afcui.toggle.checkbox .box:before, .afcwrap .afcui.toggle.checkbox label:before {
+    width: 2.5rem;
+    height: 1.2rem;
+}
+
+.afcui.button.dropdown {
+    font-weight: normal;
+}
+
+/* --Editor dropdowns size-- */
+.afcui.selection.dropdown > .text {
+    overflow: hidden;
+    min-width: 45px;
+	max-width: 45px;
+    white-space: nowrap;
+    font-size: 15px;
+    height:15px;
+}
+
+.afcui.selection.dropdown.fontselection, .afcui.selection.dropdown.fontstyle, .afcui.selection.dropdown.textdecoration {
+	padding: 6px;
+	min-width: 125px;
+	max-width: 125px;
+}
+
+.afcui.selection.dropdown.propertylist > .text{
+    overflow: hidden;
+    min-width: 100px;
+	max-width: 100px;
+    margin: 0px 10px;
+}
+
+.afcui.selection.dropdown.fontselection > .text, .afcui.selection.dropdown.fontstyle > .text, .afcui.selection.dropdown.textdecoration > .text{
+    overflow: hidden;
+    min-width: 90px;
+	max-width: 90px;
+    margin: 0px 10px;
+}
+
+.afcui.selection.dropdown.fontweight {
+	padding: 6px;
+	min-width: 70px;
+	max-width: 70px;
+}
+
+/* --Preventing conflict between semantic ui and user theme styles-- */
+.afcwrap  .afcui.popup .content{
+    width: auto;
+	white-space: nowrap; /*for safari*/
+}
+
+.afcwrap .afcui.toggle{
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+}
+
+
+.afcwrap .afcui.checkbox {
+	width:140px !important;
+}
+
+.ui.page.dimmer.modals{
+    z-index: 99999;
+}
+
+.ui.modal > .content {
+    width:auto;
+}
+
+.ui.modal > .close {
+    top: 0px;
+    right: 8px;
+    color: #ccc;
+    right: 8px;
+    font-size: 2.2rem;
+}
+
+/* wp color picker */
+
+.afccolorpickerholder{
+	position: absolute;
+	top: 5px;
+}
+
+.wp-picker-input-wrap {
+    color: rgb(68, 68, 68);
+    display: inline-block;
+    height: 24px;
+    vertical-align: top;
+    width: 140px;
+    perspective-origin: 57.75px 12px;
+    transform-origin: 57.75px 12px;
+    border: 0px none rgb(68, 68, 68);
+    border-spacing: 2px 2px;
+    font: normal normal normal normal 14px/18.2000007629395px 'Open Sans', sans-serif;
+    outline: rgb(68, 68, 68) none 0px;
+}
+
+.wp-color-picker{
+    box-shadow: rgba(0, 0, 0, 0.0666667) 0px 1px 2px 0px inset;
+    color: rgb(51, 51, 51);
+    height: 17px;
+    text-align: center;
+    width: 65px;
+    perspective-origin: 32.5px 12px;
+    transform-origin: 32.5px 12px;
+    border: 1px solid rgb(221, 221, 221);
+    border-spacing: 2px 2px;
+    font: normal normal normal normal 12px/16px monospace;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 3px 5px;
+    transition: border-color 0.05s ease-in-out 0s;
+}
+
+.button.button-small.wp-picker-clear {
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0784314) 0px 1px 0px 0px;
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+    height: 24px;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 49.515625px;
+    align-items: flex-start;
+    perspective-origin: 22.25px 12px;
+    transform-origin: 22.25px 12px;
+    background: rgb(247, 247, 247) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px 3px 3px 3px;
+    border-spacing: 2px 2px;
+    font: normal normal normal normal 11px/22px 'Open Sans', sans-serif;
+    margin: 0px 0px 0px 6px;
+    outline: rgb(85, 85, 85) none 0px;
+    padding: 0px 8px 1px;
+}
+
+.afcui.button:focus {
+    box-shadow: none !important;
+}
+
+.toggleeditor{
+    bottom: 50px !important;
+    left: 4px !important;
+    z-index: 99999;
+    position: fixed;
+}
+
+.afcui.attached.button.toggleeditor{
+    display: none;
+    z-index: 99998;
+}
+
+.afcwaiting {
+    display: none;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.5);
+    position: fixed;
+}
+
+.afcwaiting div {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.taxonomytitle{
+    display: inline-block;
+}

@@ -1,0 +1,77 @@
+.afcwrap h3 {
+    text-align: right;
+}
+
+.afcwrap th {
+    text-align: right;
+}
+
+.afcwrap {
+    direction: rtl;
+}
+
+.afcwrap .afcselectedelement {
+    direction: ltr;
+}
+
+.afcwrap .afcui.toggle.checkbox .box, .afcwrap .afcui.toggle.checkbox label {
+    padding-left: 0rem;
+    padding-right: 2.5rem;
+}
+
+.afcwrap .afcui.checkbox .box::before, .afcwrap .afcui.checkbox label::before {
+    left: auto;
+    right: 0;
+}
+
+.afcwrap .afcui.toggle.checkbox input[type="checkbox"] ~ .box::after, .afcwrap .afcui.toggle.checkbox input[type="checkbox"] ~ label::after, .afcwrap .afcui.toggle.checkbox input[type="radio"] ~ .box::after, .afcwrap .afcui.toggle.checkbox input[type="radio"] ~ label::after {
+    left: auto;
+    right: -0.05rem;
+}
+
+.afcwrap .afcui.toggle.checkbox input[type="checkbox"]:checked ~ .box::after, .afcwrap .afcui.toggle.checkbox input[type="checkbox"]:checked ~ label::after, .afcwrap .afcui.toggle.checkbox input[type="radio"]:checked ~ .box::after, .afcwrap .afcui.toggle.checkbox input[type="radio"]:checked ~ label::after {
+    left: auto;
+    right: 1.3rem;
+}
+
+.afcwrap .dataselect h3 {
+    float: right;
+}
+
+.afcui.selection.dropdown > .search.icon, .afcui.selection.dropdown > .delete.icon, .afcui.selection.dropdown > .dropdown.icon {
+    right: auto;
+    left: 1.1em;
+}
+
+.afccolorpickerholder {
+    left: auto;
+    right: 90px;
+}
+
+.button.button-small.wp-picker-clear {
+    float: right;
+}
+
+.wp-picker-open + .wp-picker-input-wrap {
+    float: right;
+    width: 165px;
+}
+
+.button.button-small.wp-picker-clear {
+    width: 80px;
+    float: right;
+    margin-left:0;
+}
+
+.ui.modal {
+    direction: rtl;
+}
+
+.ui.small.modal > .header {
+    text-align: right;
+}
+
+.ui.modal > .close {
+    right: auto;
+    left: 8px;
+}

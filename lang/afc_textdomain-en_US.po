@@ -1,0 +1,882 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AFC v1.5\n"
+"POT-Creation-Date: 2015-05-20 09:59+0330\n"
+"PO-Revision-Date: 2015-05-20 10:20+0330\n"
+"Last-Translator: wp-magic <wpmagic70@gmail.com>\n"
+"Language-Team: wp-magic <wp-magic@yahoo.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../advanced-font-changer.php:212 ../inc/admin/editfont.php:39
+msgid "Edit Font"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:8 ../inc/admin/addselector.php:8
+#: ../inc/admin/fontslist.php:10 ../inc/admin/general.php:8
+#: ../inc/admin/import-export.php:8 ../inc/admin/selectorslist.php:8
+#: ../inc/admin/uploadfonts.php:8
+msgid "Advanced Font Changer"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:24 ../inc/admin/addselector.php:25
+#: ../inc/admin/editfont.php:21 ../inc/admin/editselector.php:22
+#: ../inc/admin/general.php:24 ../inc/admin/import-export.php:24
+#: ../inc/admin/uploadfonts.php:24
+msgid "Submit"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:43
+msgid "Add External Font"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:50 ../inc/admin/editfont.php:47
+msgid "Font Status <strong style=\"color:red;\">*</strong>"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:58 ../inc/admin/editfont.php:55
+msgid "Font Name <strong style=\"color:red;\">*</strong>"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:66 ../inc/admin/editfont.php:63
+msgid "Font URL"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:74 ../inc/admin/editfont.php:71
+msgid "Font Meta (FVD)"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:87 ../inc/admin/editfont.php:86
+msgid "Unknown"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:88 ../inc/admin/editfont.php:87
+msgid "Google"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:89
+msgid "Local"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:125
+msgid ""
+"Here you can add a external font to plugin's fonts list. <br /> <strong>Note:"
+"</strong> If you are adding a google font or a font which is included in os, "
+"just write font name and left the url empty.( example: Tahoma, Helvetica, "
+"Droid Sans , etc ).<br /> <strong>Note2:</strong> If you are unable to "
+"upload your fonts to the plugin using upload font page, you can add its name "
+"to plugin fonts list by choosing local font. In this case the name of your "
+"font is your font file name."
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:143
+msgid ""
+"Your metadata is incorrect. Example of correct meta data is : b or i4 or n4,"
+"i7 <br>"
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:156 ../inc/admin/editfont.php:161
+msgid "Entered url is incorrect. A url must have a http at its begining."
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:163 ../inc/admin/addexternalfont.php:177
+msgid "Your font added to list."
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:171
+msgid ""
+"Invalid google font name. A google font name can only contains this "
+"characters : [A-Z],[a-z],[1-9],[space]."
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:184
+msgid ""
+"Invalid local font name. A local font name can only contains this "
+"characters : [A-Z],[a-z],[1-9],[-],[_]."
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:190
+msgid ""
+"The name of your local font added to list. Now you can upload its files in "
+"plugin-dir/fonts/local ."
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:197 ../inc/admin/uploadfonts.php:191
+msgid "A font with this name already exists."
+msgstr ""
+
+#: ../inc/admin/addexternalfont.php:202 ../inc/admin/editfont.php:199
+msgid "Please enter a font name."
+msgstr ""
+
+#: ../inc/admin/addselector.php:43 ../inc/admin/editselector.php:40
+msgid "Add New Selector"
+msgstr ""
+
+#: ../inc/admin/addselector.php:50 ../inc/admin/editselector.php:47
+msgid "Selector Name "
+msgstr ""
+
+#: ../inc/admin/addselector.php:58 ../inc/admin/editselector.php:55
+msgid "Is It For ShortCode ?"
+msgstr ""
+
+#: ../inc/admin/addselector.php:66 ../inc/admin/editselector.php:63
+#: ../inc/classes/class_fontslist.php:81
+msgid "Font Name"
+msgstr ""
+
+#: ../inc/admin/addselector.php:74 ../inc/admin/editselector.php:71
+msgid "Force Change Font"
+msgstr ""
+
+#: ../inc/admin/addselector.php:82 ../inc/admin/editselector.php:79
+msgid "Font Size"
+msgstr ""
+
+#: ../inc/admin/addselector.php:90 ../inc/admin/editselector.php:87
+msgid "Font Weight"
+msgstr ""
+
+#: ../inc/admin/addselector.php:98 ../inc/admin/editselector.php:95
+msgid "Font Style"
+msgstr ""
+
+#: ../inc/admin/addselector.php:106 ../inc/admin/editselector.php:103
+msgid "Text Color"
+msgstr ""
+
+#: ../inc/admin/addselector.php:114 ../inc/admin/editselector.php:111
+msgid "Text Decoration"
+msgstr ""
+
+#: ../inc/admin/addselector.php:122 ../inc/admin/editselector.php:119
+msgid "Text Shadow"
+msgstr ""
+
+#: ../inc/admin/addselector.php:130 ../inc/admin/editselector.php:127
+msgid "Selector Page Type"
+msgstr ""
+
+#: ../inc/admin/addselector.php:203 ../inc/admin/addselector.php:221
+#: ../inc/admin/editselector.php:204 ../inc/admin/editselector.php:223
+#: ../inc/classes/class_afcstrings.php:106
+msgid "Unset"
+msgstr ""
+
+#: ../inc/admin/addselector.php:262 ../inc/admin/editselector.php:267
+msgid "If you dont want text shadow just left all fields blank."
+msgstr ""
+
+#: ../inc/admin/addselector.php:265 ../inc/admin/editselector.php:270
+msgid "h-shadow  "
+msgstr ""
+
+#: ../inc/admin/addselector.php:269 ../inc/admin/editselector.php:274
+msgid "v-shadow  "
+msgstr ""
+
+#: ../inc/admin/addselector.php:273 ../inc/admin/editselector.php:278
+msgid "blur  "
+msgstr ""
+
+#: ../inc/admin/addselector.php:276 ../inc/admin/editselector.php:281
+msgid "color  "
+msgstr ""
+
+#: ../inc/admin/addselector.php:288 ../inc/admin/editselector.php:294
+msgid ""
+"If the selector is not for specific Page Types don't check anyone.<br> For "
+"finding id's take a look at <a href=\"http://codex.wordpress.org/"
+"FAQ_Working_with_WordPress#How_do_I_determine_a_Post.2C_Page.2C_Category.2C_Tag.2C_Link.2C_Link_Category.2C_or_User_ID.3F"
+"\">this link</a>.<br> Seperate each id with a \",\" character."
+msgstr ""
+
+#: ../inc/admin/addselector.php:298
+msgid "ID(s) (optional) : "
+msgstr ""
+
+#: ../inc/admin/addselector.php:318
+msgid ""
+"Here you can add new selector to the plugin selectors list.<br>\n"
+"\t<strong>Note1:</strong> If you have another selector with same name as "
+"this one and one of page types of that one match with current selector, "
+"plugin removes the existing and adds this one.\n"
+"\tSo be careful when adding a selector that has selector name same as "
+"existing one. "
+msgstr ""
+
+#: ../inc/admin/addselector.php:332
+msgid "Please fill in selectorname."
+msgstr ""
+
+#: ../inc/admin/addselector.php:337 ../inc/admin/editselector.php:345
+msgid ""
+"Selector Name must starts with tag name or any string as class name. Also it "
+"might not have [.] or [#] at the beginning and its end."
+msgstr ""
+
+#: ../inc/admin/addselector.php:344
+msgid "You can not left \"is it a short code\" field empty."
+msgstr ""
+
+#: ../inc/admin/addselector.php:346 ../inc/admin/editselector.php:354
+msgid ""
+"For using this selector in a shortcode it must have no '.' , '#' or ' "
+"'(space) in its name. "
+msgstr ""
+
+#: ../inc/admin/addselector.php:358
+msgid "Selected Font for this selector is invalid."
+msgstr ""
+
+#: ../inc/admin/addselector.php:365
+msgid "You have not selected any font to force it."
+msgstr ""
+
+#: ../inc/admin/addselector.php:371 ../inc/admin/editselector.php:379
+msgid "Fontsize is numeric, please type a positive number or left it empty."
+msgstr ""
+
+#: ../inc/admin/addselector.php:379 ../inc/admin/editselector.php:387
+msgid "Font Weight is numeric."
+msgstr ""
+
+#: ../inc/admin/addselector.php:387 ../inc/admin/editselector.php:395
+msgid "Invalid font style."
+msgstr ""
+
+#: ../inc/admin/addselector.php:395 ../inc/admin/editselector.php:403
+msgid "The text color code is invalid."
+msgstr ""
+
+#: ../inc/admin/addselector.php:402 ../inc/admin/editselector.php:410
+msgid "Selected decoration is invalid."
+msgstr ""
+
+#: ../inc/admin/addselector.php:411 ../inc/admin/editselector.php:419
+msgid "Horizontal or vertical values in text shadow fields are invalid."
+msgstr ""
+
+#: ../inc/admin/addselector.php:418 ../inc/admin/editselector.php:426
+msgid "Value in blur field of text shadow is invalid."
+msgstr ""
+
+#: ../inc/admin/addselector.php:426 ../inc/admin/editselector.php:437
+msgid "Text shadow color code is invalid."
+msgstr ""
+
+#: ../inc/admin/addselector.php:435 ../inc/admin/editselector.php:449
+msgid ""
+"Both the h-shadow and v-shadow of textshadow are required, left them empty "
+"or fill in both."
+msgstr ""
+
+#: ../inc/admin/addselector.php:445 ../inc/admin/editselector.php:459
+msgid "Intered value in following field is incorrect:"
+msgstr ""
+
+#: ../inc/admin/addselector.php:445 ../inc/admin/editselector.php:459
+msgid " . example of correct value is: 1,2,3"
+msgstr ""
+
+#: ../inc/admin/addselector.php:485
+msgid "New selector successfully saved."
+msgstr ""
+
+#: ../inc/admin/editfont.php:127
+msgid ""
+"Here you can edit an existing external font. <br> <strong>Note1:</strong> If "
+"this is a google font or a font which is included in os, left the url empty."
+"( example: Tahoma, Helvetica, Droid Sans , etc ).\n"
+"\t<br> <strong>Note2:</strong> For more info about fvd (font variation "
+"description) please see plugin documentation."
+msgstr ""
+
+#: ../inc/admin/editfont.php:148
+msgid ""
+"Your metadata is incorrect. Example of correct meta data is : b or i4 or n4,"
+"i7 "
+msgstr ""
+
+#: ../inc/admin/editfont.php:171 ../inc/admin/editfont.php:187
+msgid "Any changes successfully saved."
+msgstr ""
+
+#: ../inc/admin/editfont.php:178
+msgid ""
+"Incorect google font name. A google font name can only contains this "
+"characters : [A-Z],[a-z],[1-9],[space]."
+msgstr ""
+
+#: ../inc/admin/editfont.php:194
+msgid ""
+"You can not edit the font name. But you can remove this font from list and "
+"add it with diffrent name."
+msgstr ""
+
+#: ../inc/admin/editselector.php:307
+msgid "(optional)"
+msgstr ""
+
+#: ../inc/admin/editselector.php:327
+msgid ""
+"Here you can edit an existing selector and add it as a new selector.<br>\n"
+"\t<strong>Note1:</strong> If you have another selector with same name as "
+"this one and one of page types of that one match with current selector, "
+"plugin removes the existing and adds this one.\n"
+"\tSo be careful when editing selector name or pagetypes.<br>\n"
+"\t<strong>Note2:</strong> If you change the pagetype and choose pagetype(s) "
+"other than current pagetype(s), Plugin adds the selector as new selector. "
+msgstr ""
+
+#: ../inc/admin/editselector.php:340
+msgid "Please fill in selectorname.<br>"
+msgstr ""
+
+#: ../inc/admin/editselector.php:352
+msgid "You can not left is it short code field empty."
+msgstr ""
+
+#: ../inc/admin/editselector.php:366
+msgid "Selected Font for this selector is invalid.<br>"
+msgstr ""
+
+#: ../inc/admin/editselector.php:373
+msgid "You have not selected any font to force it.<br>"
+msgstr ""
+
+#: ../inc/admin/editselector.php:506
+msgid "Your edit's successfully saved."
+msgstr ""
+
+#: ../inc/admin/general.php:42
+msgid "Genaral Options"
+msgstr ""
+
+#: ../inc/admin/general.php:49
+msgid "Load editor"
+msgstr ""
+
+#: ../inc/admin/general.php:68
+msgid ""
+" Activate frontend editor ( Can be accessed from its button in admin bar. "
+"Only for administrator )"
+msgstr ""
+
+#: ../inc/admin/general.php:75
+msgid "Here you can see general plugin options."
+msgstr ""
+
+#: ../inc/admin/general.php:86
+msgid "Your changes saved."
+msgstr ""
+
+#: ../inc/admin/import-export.php:42
+msgid "Import / Export Settings"
+msgstr ""
+
+#: ../inc/admin/import-export.php:49
+msgid "Export data"
+msgstr ""
+
+#: ../inc/admin/import-export.php:57
+msgid "Ready to use stylesheet"
+msgstr ""
+
+#: ../inc/admin/import-export.php:65
+msgid "Import data"
+msgstr ""
+
+#: ../inc/admin/import-export.php:82
+msgid "These are your selectors."
+msgstr ""
+
+#: ../inc/admin/import-export.php:86
+msgid ""
+"These are your fonts. Local fonts must have files, and you must move them "
+"too. Font files are located in plugin-dir/fonts/local ."
+msgstr ""
+
+#: ../inc/admin/import-export.php:101
+msgid ""
+"This is a ready to use stylesheet for inserting directly in your theme style "
+"file . keep in mind you must edit links to font files."
+msgstr ""
+
+#: ../inc/admin/import-export.php:105
+msgid ""
+"This field contains link to your used google fonts.(if you used google "
+"fonts, insert it in the head tag of your theme. )"
+msgstr ""
+
+#: ../inc/admin/import-export.php:115
+msgid "To import selectors paste your data here."
+msgstr ""
+
+#: ../inc/admin/import-export.php:120
+msgid "To import fonts paste your data here."
+msgstr ""
+
+#: ../inc/admin/import-export.php:131
+msgid ""
+"Here you can easily import , export plugin settings . Also you can export an "
+"generated style ( you can insert it directly in your styles, so you don't "
+"need this plugin in another wp installations ).<br>"
+msgstr ""
+
+#: ../inc/admin/import-export.php:132
+msgid ""
+"<strong style=\"color:red;\">Warning:</strong> be aware of submitting this "
+"form with empty data in import textarea. doing this will removes all your "
+"saved data"
+msgstr ""
+
+#: ../inc/admin/import-export.php:156 ../inc/admin/import-export.php:182
+msgid " Entry(s) successfully imported."
+msgstr ""
+
+#: ../inc/admin/import-export.php:160 ../inc/admin/import-export.php:165
+#: ../inc/admin/import-export.php:186 ../inc/admin/import-export.php:191
+msgid "Your data is incorrect."
+msgstr ""
+
+#: ../inc/admin/import-export.php:200
+msgid "All your selectors successfully removed."
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:42
+msgid "Upload font"
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:49
+msgid "Upload an eot file"
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:57
+msgid "Upload an ttf file"
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:65
+msgid "Upload an woff file"
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:73
+msgid "Upload an svg file"
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:133
+msgid ""
+"Here you can upload your own fonts. After upload process completes you must "
+"press save changes so we can validate your uploaded files ( All four fields "
+"are required. If you don't have one or more of this formats , you can "
+"convert your font using online font converters ).<br><strong>Note1:</strong> "
+"We use font filename as fontname. <br><strong>Note2:</strong> you can only "
+"use this characters in a font name: [A-Z] and [a-z] and [0-9] and [-]. "
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:169
+msgid "Link address of file with this format is incorrect : "
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:174
+msgid "You have inserted incorrect file format in field : "
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:180
+msgid "Name of file with format eot is diffrent than file with format : "
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:185
+msgid "Field for this file format is empty : "
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:196
+msgid "Name of file with format eot has wrong characters."
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:201
+msgid "Please insert a eot file in field with format eot."
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:206
+msgid ""
+"AFC fonts folder not exists, please make sure: plugins-directory/advanced-"
+"font-changer/fonts/local folder exists"
+msgstr ""
+
+#: ../inc/admin/uploadfonts.php:227
+msgid "Your font successfully saved."
+msgstr ""
+
+#: ../inc/afc-ajax.php:24 ../inc/afc-ajax.php:29 ../inc/afc-ajax.php:37
+msgid "Operation Successfull !"
+msgstr ""
+
+#: ../inc/afc-ajax.php:32 ../inc/afc-ajax.php:40 ../inc/afc-ajax.php:55
+msgid "Operation Failed !"
+msgstr ""
+
+#: ../inc/classes/class_afcselectors.php:489
+#: ../inc/classes/class_afcstrings.php:119
+msgid "Font Family: "
+msgstr ""
+
+#: ../inc/classes/class_afcselectors.php:490
+#: ../inc/classes/class_afcstrings.php:120
+msgid "Font Size: "
+msgstr ""
+
+#: ../inc/classes/class_afcselectors.php:491
+#: ../inc/classes/class_afcstrings.php:121
+msgid "Font Weight: "
+msgstr ""
+
+#: ../inc/classes/class_afcselectors.php:492
+#: ../inc/classes/class_afcstrings.php:122
+msgid "Font Style: "
+msgstr ""
+
+#: ../inc/classes/class_afcselectors.php:493
+#: ../inc/classes/class_afcstrings.php:123
+msgid "Text Color: "
+msgstr ""
+
+#: ../inc/classes/class_afcselectors.php:494
+#: ../inc/classes/class_afcstrings.php:124
+msgid "Text Decoration: "
+msgstr ""
+
+#: ../inc/classes/class_afcselectors.php:495
+#: ../inc/classes/class_afcstrings.php:125
+msgid "Text Shadow: "
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:15
+#: ../inc/classes/class_afcstrings.php:27
+msgid "Home Page"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:16
+#: ../inc/classes/class_afcstrings.php:29
+msgid "Archive"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:17
+msgid "Category(s) Archive"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:18
+msgid "Author Page(s)"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:19
+msgid "Single Post(s)"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:20
+msgid "Page(s)"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:21
+msgid "Tag(s) Archive"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:22
+msgid "This Tag (s) (For posts)"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:28
+msgid "Category"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:30
+msgid "Author"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:31
+msgid "Single Post"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:32
+msgid "Page"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:33
+msgid "Tag Archive"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:34
+msgid "Has Tag"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:83
+msgid "Generated Selector: "
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:84
+msgid "Page Type:"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:85
+msgid "To use in all pages don't active anyone"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:86
+msgid "Unlock"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:87
+msgid "Save"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:88
+msgid "Switch Tab"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:89
+msgid "No element selected."
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:90
+msgid ""
+"Server returned an invalid output. Maybe you are not logged in, or your user "
+"has no sufficient access to edit site theme. Here is server response"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:91
+msgid "Your Changes Saved!"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:92
+msgid ""
+"You are not logged in, or your user has no sufficient access to edit site "
+"theme."
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:93
+msgid "Unable To Save."
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:94
+msgid "You have reached body tag !. There is no more parents for this tag."
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:95
+msgid "No data to save . Please first make some changes!"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:96
+msgid "Selector Successfully Removed!"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:97
+msgid "Reset This"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:98
+msgid "Requested font name not exists."
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:99
+msgid "Force Change"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:100
+msgid "No font is selected to be forced !"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:101
+msgid "Choose Property: "
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:102
+msgid "H-Shadow: "
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:103
+msgid "V-Shadow: "
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:104
+msgid "Blur: "
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:105
+msgid "Color: "
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:107
+msgid "None"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:108
+msgid "Under Line"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:109
+msgid "Over Line"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:110
+msgid "Line Through"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:111
+msgid "Return"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:112
+msgid "Go To Selector Properties"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:113
+msgid "Normal"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:114
+msgid "Italic"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:115
+msgid "Oblique"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:129
+msgid "Clear"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:130
+msgid "Default"
+msgstr ""
+
+#: ../inc/classes/class_afcstrings.php:131
+msgid "Select Color"
+msgstr ""
+
+#: ../inc/classes/class_fontslist.php:15
+msgid "font"
+msgstr ""
+
+#: ../inc/classes/class_fontslist.php:16
+msgid "fonts"
+msgstr ""
+
+#: ../inc/classes/class_fontslist.php:42
+msgid "No Fonts Found."
+msgstr ""
+
+#: ../inc/classes/class_fontslist.php:82
+msgid "Status"
+msgstr ""
+
+#: ../inc/classes/class_fontslist.php:83
+msgid "Meta Data"
+msgstr ""
+
+#: ../inc/classes/class_fontslist.php:119
+msgid "Edit"
+msgstr ""
+
+#: ../inc/classes/class_fontslist.php:170
+msgid " Selected fonts has been deleted. "
+msgstr ""
+
+#: ../inc/classes/class_fontslist.php:174
+msgid "Can not access fonts array. "
+msgstr ""
+
+#: ../inc/classes/class_selectorslist.php:16
+#: ../inc/classes/class_selectorslist.php:71
+msgid "Selector"
+msgstr ""
+
+#: ../inc/classes/class_selectorslist.php:17
+msgid "Selectors"
+msgstr ""
+
+#: ../inc/classes/class_selectorslist.php:44
+msgid "No Selector Found."
+msgstr ""
+
+#: ../inc/classes/class_selectorslist.php:72
+msgid "PageType"
+msgstr ""
+
+#: ../inc/classes/class_selectorslist.php:73
+msgid "Properties"
+msgstr ""
+
+#: ../inc/classes/class_selectorslist.php:145
+msgid " Selector's has been deleted. "
+msgstr ""
+
+#: ../inc/classes/class_selectorslist.php:149
+msgid " Unable to access selectors array. "
+msgstr ""
+
+#: ../inc/classes/class_wp-list-table.php:184
+msgid "No items found."
+msgstr ""
+
+#: ../inc/classes/class_wp-list-table.php:308
+msgid "Bulk Actions"
+msgstr ""
+
+#: ../inc/classes/class_wp-list-table.php:318
+msgid "Apply"
+msgstr ""
+
+#: ../inc/classes/class_wp-list-table.php:402
+msgid "All dates"
+msgstr ""
+
+#. translators: 1: month name, 2: 4-digit year
+#: ../inc/classes/class_wp-list-table.php:415
+#, php-format
+msgid "%1$s %2$d"
+msgstr ""
+
+#: ../inc/classes/class_wp-list-table.php:431
+msgid "List View"
+msgstr ""
+
+#: ../inc/classes/class_wp-list-table.php:432
+msgid "Excerpt View"
+msgstr ""
+
+#: ../inc/classes/class_wp-list-table.php:458
+#, php-format
+msgid "%s pending"
+msgstr ""
+
+#: ../inc/classes/class_wp-list-table.php:713
+msgid "Select All"
+msgstr ""
+
+#: ../inc/printeditor.php:83
+msgid "AFC Editor"
+msgstr ""
+
+#: ../inc/printeditor.php:129
+msgid "No Font"
+msgstr ""
+
+#: ../inc/printeditor.php:261
+msgid "AFC Alert"
+msgstr ""
+
+#: ../inc/printeditor.php:265
+msgid "Default Message"
+msgstr ""
+
+#: ../inc/printeditor.php:269
+msgid "Ok"
+msgstr ""

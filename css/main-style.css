@@ -1,0 +1,43 @@
+/* Admin bar editor menu item style */
+#wpadminbar #wp-admin-bar-pg-afc-toggle > .ab-item:before {
+	content: "\f305";
+	margin:2px 1px 0;
+	transform: rotate(-20deg);
+}
+
+#wpadminbar #wp-admin-bar-pg-afc-toggle:hover > .ab-item::before {
+    transform: rotate(0deg);
+}
+
+/* Editor Frame */
+.afcframe{
+	position: fixed;
+	width:510px;
+	height:210px;
+	background-color: transparent;
+	z-index: 99999;
+	top: 33px;
+	left: 0;
+`	display: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-o-user-select: none;
+	user-select: none;
+	direction: ltr;
+	overflow: hidden;
+}
+
+/* Selected element highliters */
+.afcactive{
+	background-color: rgba(79, 150, 36, 0.2) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 2px #1ABC9C;
+	-moz-box-shadow: inset 0px 0px 0px 2px #1ABC9C;
+	box-shadow: inset 0px 0px 0px 2px #1ABC9C;	
+}
+
+.afchover{
+	-webkit-box-shadow: inset 0px 0px 0px 2px #f00;
+	-moz-box-shadow: inset 0px 0px 0px 2px #f00;
+	box-shadow: inset 0px 0px 0px 2px #f00;	
+}
