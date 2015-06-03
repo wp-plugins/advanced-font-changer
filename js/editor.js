@@ -401,7 +401,7 @@ function removeThisAttr(type, element) {
                 cPos = i;
             }
         }
-        alert(cPos);
+        //alert(cPos);
         classes.splice(cPos, 1);
         classes.shift();
         //print_r(classes);
