@@ -27,7 +27,7 @@ The plugin editor lets you change the appearance of your theme from time to time
 <li>Text Decoration</li>
 <li>Text Shadow</li>
 </ol>
-- After editing properties and saving changes, you can choose to load your selector in only specific page types withe specific page ids.
+- After editing properties and saving changes, you can choose to load your selector in only specific page types with specific page ids.
 - The plugin also has a short code that lets you use a selector within your post content.
 - Another most important feature of the plugin is that it lets you use google fonts in your theme.
 

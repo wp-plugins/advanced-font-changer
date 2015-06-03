@@ -213,7 +213,7 @@ function pg_afc_adminbarmenu( $wp_admin_bar ) {
 	if( $activEditor['show_editor_btn'] == 'yes' && is_user_logged_in() && current_user_can('manage_options')){
 		$args = array(
 			'id'     => 'pg-afc-toggle',
-			'title'  => __( 'Edit Font', 'pg-afc' ),
+			'title'  => __( 'Edit Font', 'afc_textdomain' ),
 			'href'   => afc_get_url( ),
 			'parent' => false, 
 			'meta'   => array( 
