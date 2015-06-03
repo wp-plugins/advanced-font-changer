@@ -381,13 +381,30 @@ function afcReBuildThis(element) {
 function removeThisAttr(type, element) {
     var objectPos = afc_lockedElement
 	, selectorArr = afc_allElems[objectPos].editorData.selectorMap
-	, cPos = jj(element).parent().attr('cpos')
-	, tagID = jj(element).parent().parent().attr('parent')
-	, classes = selectorArr[tagID].name.split('.')
+    , targetObj = jj(element).parent()
+    , targetSelector = targetObj.parent().text().replace(/<.>/g, '').replace(' ', '')
+	, tagID = -1;
+    for (var i in selectorArr) {
+        if (targetSelector.trim() == selectorArr[i].name.trim()) {
+            tagID = i;
+        }
+    }
+	var classes = selectorArr[tagID].name.split('.')
 	, tagAndID = classes[0];
+    //print_r(selectorArr);
+    //alert(tagID);
     if (type == 'class') {
-        classes.shift();
+        targetClass = targetObj.text().replace(/<.>/g, '').replace(' ', '').replace('.','')
+        , cPos = -1;
+        for (var i in classes) {
+            if (targetClass.trim() == classes[i].trim()) {
+                cPos = i;
+            }
+        }
+        alert(cPos);
         classes.splice(cPos, 1);
+        classes.shift();
+        //print_r(classes);
         if (classes.length > 0) {
 
             classes = '.' + classes.join('.');
