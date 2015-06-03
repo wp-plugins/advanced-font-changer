@@ -53,5 +53,7 @@ or after downloading the plugin go to wordpress dashboard and navigate to plugin
 == Frequently Asked Questions ==
 
 == Screenshots ==
-1. box settings screenshot 1
-2. box settings screenshot 2
+1. screenshot 1
+2. screenshot 2
+3. screenshot 3
+4. screenshot 4
