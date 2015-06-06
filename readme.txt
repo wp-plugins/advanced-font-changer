@@ -11,6 +11,10 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 == Description ==
 <h5>Visually change text styles in your theme</h5>AFC is a wp plugin that lets you change the style of texts in your theme using its visual editor.
 The plugin editor lets you change the appearance of your theme from time to time without any code editing or css knowledge. Just choose the text and change the style. If you know css you can also edit the generated selectors
+<br />
+
+For more help please visit this <a href="http://wp-src.ir/afc">link</a>.
+
 <h5>Process of changing styles is really easy:</h5>
 <ol>
 <li>Open the editor</li>
@@ -31,7 +35,6 @@ The plugin editor lets you change the appearance of your theme from time to time
 - The plugin also has a short code that lets you use a selector within your post content.
 - Another most important feature of the plugin is that it lets you use google fonts in your theme.
 
-For more help please visit this <a href="http://wp-src.ir/afc">link</a>
 Enjoy using this free plugin !!
 
 == Changelog ==
