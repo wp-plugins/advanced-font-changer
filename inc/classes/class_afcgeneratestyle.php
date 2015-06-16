@@ -50,8 +50,13 @@ class afcstyles{
 						$properties['textShadow'] .= $selector['properties']['textShadow']['color'] . ' !important';
 					$properties['textShadow'] .= ';/*eots*/ ';
 				}
-				if( $export == 'no' && $properties['fontFamily'] != '' )
-					$wfClass = '.wf-active ';
+				if( $export == 'no' && $properties['fontFamily'] != '' ){
+                    $option = get_option('afc_general_settings');
+                    if( isset( $option['use_webfontloader'] ) && $option['use_webfontloader'] == 'yes' )
+                        $wfClass = '.wf-active ';
+                    else
+                        $wfClass = ' ';
+                }
 				$output .= $wfClass . $pt . ' ' . ( ( $selector['editorData']['isShortCode'] == 1 && !preg_match( "/[#.]/", $selector['selectorName'] ) )? '.' : ''  ) . $selector['selectorName'] . '{ ' 
 						. $properties['fontFamily'] 
 						. $properties['fontSize'] 
@@ -75,33 +80,19 @@ class afcstyles{
 		$fontFaces = '';
 		$fontNames = $this->fontNamesArr( $pageType, 'local' );
 		if( count( $fontNames ) > 0 ){
-			$link = ADVANCEDFONTCHANGERURL . 'fonts/local/';
+            $uploaddir = wp_upload_dir();
+			$link = $uploaddir['baseurl'] . '/afc-local-fonts/';
 			foreach( $fontNames as $key ){
-					$fontFaces .= '@font-face { 
-						font-family: "' . $key['name'] . '"; 
-						src: url("' . $link . 'eot/' . $key['name'] . '.eot"); 
-						src: url("' . $link . 'svg/' . $key['name'] . '.svg#titillium-light-webfont") format("svg"), 
-							 url("' . $link . 'eot/' . $key['name'] . '.eot?#iefix") format("embedded-opentype"), 
-							 url("' . $link . 'woff/' . $key['name'] . '.woff") format("woff"), 
-							 url("' . $link . 'ttf/' . $key['name'] . '.ttf") format("truetype");}';
+					$fontFaces .= '@font-face {
+						font-family: "' . $key['name'] . '";
+						src: url("' . $link . $key['name'] . '.eot");
+						src: url("' . $link . $key['name'] . '.svg#titillium-light-webfont") format("svg"),
+							 url("' . $link . $key['name'] . '.eot?#iefix") format("embedded-opentype"),
+							 url("' . $link . $key['name'] . '.woff") format("woff"), 
+							 url("' . $link . $key['name'] . '.ttf") format("truetype");}';
 			}
 		}
 		return $fontFaces;
-	}
-	
-	/**
-     * Generates a link to used google fonts style based on requested page type
-	 * @param string $pageType 
-	 * @return string
-	 */
-	function generateGoogleFontsStyle( $pageType = 'all' ){
-		$link = 'http://fonts.googleapis.com/css?family=';
-		$fontNames = $this->fontNamesArr( $pageType, 'google' );
-		if( is_array( $fontNames ) && count( $fontNames ) > 0 ){
-			foreach( $fontNames as $key )
-				$link .= str_replace( ' ', '+', trim( $key['name'] ) ) . '|';
-		}
-		return $link;
 	}
 
 	/**
@@ -219,6 +210,21 @@ class afcstyles{
 			}
 		}
 		return $fontsObj;
+	}
+    
+    /**
+     * Generates a link to used google fonts style based on requested page type
+     * @param string $pageType 
+     * @return string
+     */
+	function generateGoogleFontsStyle( $pageType = 'all' ){
+		$link = 'http://fonts.googleapis.com/css?family=';
+		$fontNames = $this->fontNamesArr( $pageType, 'google' );
+		if( is_array( $fontNames ) && count( $fontNames ) > 0 ){
+			foreach( $fontNames as $key )
+				$link .= str_replace( ' ', '+', trim( $key['name'] ) ) . '|';
+		}
+		return $link;
 	}
 	
 	/**

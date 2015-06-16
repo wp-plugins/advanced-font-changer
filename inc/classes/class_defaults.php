@@ -3,20 +3,46 @@
 * This class adds plugin default data into wp database
 */
 class afcdefaults extends afctables{
-	var $charset;
-	var $fontsTable;
-	var $selectorsTable;
 	
 	/**
      * Class constructor
 	 */
 	function __construct(){
-		global $afcConfig;
-		$this->charset = $afcConfig["charset"];
-		$this->fontsTable = $afcConfig["fontsTable"];
-		$this->selectorsTable = $afcConfig["selectorsTable"];
+        $this->setInfo();
 	}
+    
 	
+    function run(){
+        $this->move_fonts();
+        $this->createTables();
+    }
+    
+    function move_fonts( ){
+        $src = ADVANCEDFONTCHANGERDIR . 'fonts/local';
+        $fonts = afcStrings::getString('defaultFonts');
+        $uploaddir = wp_upload_dir();
+        $dest = $uploaddir['basedir'] . '/afc-local-fonts';
+        $formats = array('.eot','.ttf','.woff','.svg');
+        
+        //echo $dest; 
+        // echo file_exists( $dest );
+        if( !file_exists( $uploaddir['basedir'] ) ){
+            mkdir( $uploaddir['basedir'], 0755, true );
+        }
+        if( !file_exists( $dest ) ){
+            mkdir( $dest, 0755, true );
+        }
+        if( file_exists( $src ) ){
+            foreach($fonts as $font){
+                foreach ($formats as $format){
+                    if ( file_exists( $src . '/' . $font['name'] . $format ) ){
+                        rename( $src . '/' . $font['name'] . $format, $dest . '/' . $font['name'] . $format );
+                    }
+                }
+            }
+        }
+    }
+    
 	/**
 	 * Creates plugin tables
 	 */

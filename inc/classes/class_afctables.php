@@ -3,8 +3,19 @@
 * This class is for working with plugin data tables
 */
 class afctables{
+    var $charset;
+	var $fontsTable;
+	var $selectorsTable;
 
-	/**
+    
+    function setInfo(){
+        global $afcConfig;
+		$this->charset = $afcConfig["charset"];
+		$this->fontsTable = $afcConfig["fontsTable"];
+		$this->selectorsTable = $afcConfig["selectorsTable"];
+    }
+    
+    /**
      * To create a table
 	 * @param string $tableName 
 	 * @param string $sql 

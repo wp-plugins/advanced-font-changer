@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) OR exit;
 Plugin Name: Advanced Font Changer
 Plugin URI: -
 Description: This plugin lets you visually change the font and other text properties in your theme, using its visual editor.
-Version: 1.5
+Version: 1.5.1
 Author: wp-magic
 Author URI: -
 License: GPL2
@@ -73,18 +73,22 @@ function pg_afc_install(){
 				 "selectorsTable" 	=> $wpdb->prefix . "afc_selectors"
 				);
 	if( $options = get_option('afc_general_settings') ){
-		$options['show_editor_btn'] = 'yes';
-		update_option( 'afc_general_settings', $options );
+		//$options['show_editor_btn'] = 'yes';
+		//update_option( 'afc_general_settings', $options );
+        if( !isset( $options['use_webfontloader'] ) ){
+            $options['use_webfontloader'] = 'no';
+            update_option( 'afc_general_settings', $options );
+        }
 	}
 	else
-		update_option( 'afc_general_settings', array( 'show_editor_btn' => 'yes' ) );
+		update_option( 'afc_general_settings', array( 'show_editor_btn' => 'yes', 'use_webfontloader' => 'no' ) );
 	update_option('afc_db_vertion','1.0');
 	//creating plugin tables
 	require_once( ADVANCEDFONTCHANGERDIR . 'inc/classes/class_afcfonts.php' );
 	require_once( ADVANCEDFONTCHANGERDIR . 'inc/classes/class_afctables.php' );
 	require_once( ADVANCEDFONTCHANGERDIR . 'inc/classes/class_defaults.php' ); 
 	$con = new afcdefaults;
-	$con->createTables();
+	$con->run();
 	
 }
 
@@ -142,15 +146,16 @@ add_action( 'admin_enqueue_scripts', 'afc_enqueue_in_admin' );
  * To load required files for plugin editor to work
  */
 function afc_enqueue_in_frontend(){
-	
-	$afcStyles = new afcstyles;
-	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'afc-web-font-loader', ADVANCEDFONTCHANGERURL . 'js/webfontloader.js' );
-	wp_enqueue_script( 'afc-font-loader', ADVANCEDFONTCHANGERURL . 'js/fontloader.js' );
-	wp_localize_script( 'afc-font-loader', 'afc_fonts_loader_data', array( 'wf_obj' => $afcStyles->getFontLoaderObject() ) );
-	$activateEditor = get_option('afc_general_settings');
+	$generalOptions = get_option('afc_general_settings');
+    if( $generalOptions['use_webfontloader'] == 'yes' || is_user_logged_in()  ){
+        $afcStyles = new afcstyles;
+        wp_enqueue_script( 'jquery' );
+        wp_enqueue_script( 'afc-web-font-loader', ADVANCEDFONTCHANGERURL . 'js/webfontloader.js' );
+        wp_enqueue_script( 'afc-font-loader', ADVANCEDFONTCHANGERURL . 'js/fontloader.js' );
+        wp_localize_script( 'afc-font-loader', 'afc_fonts_loader_data', array( 'wf_obj' => $afcStyles->getFontLoaderObject() ) );
+    }
 	//We load this style and js files only for admins. Normal viewer do not needs this files.
-	if( is_user_logged_in() && current_user_can('manage_options') && $activateEditor['show_editor_btn'] == 'yes' ){
+	if( is_user_logged_in() && current_user_can('manage_options') && $generalOptions['show_editor_btn'] == 'yes' ){
 		//styles
 		wp_enqueue_style( 'afc-editor-loader' );
 		//scripts
@@ -228,8 +233,24 @@ function pg_afc_adminbarmenu( $wp_admin_bar ) {
 /*
 * Custome Styles
 */
+add_action( 'wp_head', 'afc_inline_links' );
 add_action( 'wp_head', 'afc_inline_styles', 999 );
 add_action( 'admin_head', 'afc_adminmenu_icon_style' );
+
+/**
+ * To insert style of selectors in current requestd page, head tag
+ */
+function afc_inline_links() {
+    if( $options = get_option('afc_general_settings') ){
+        if( isset( $options['use_webfontloader'] ) && $options['use_webfontloader'] == 'no' ){
+            $afcStyles = new afcstyles;
+            $localLink = $afcStyles->createFontGeneratorUrl( 'afc-public-fonts-nonce' );
+            $googleLink = $afcStyles->generateGoogleFontsStyle();
+            echo '<link href="'. $localLink .'" type="text/css" rel="stylesheet" />
+            <link href="'. $googleLink .'" type="text/css" rel="stylesheet" />';
+        }
+    }
+}
 
 /**
  * To insert style of selectors in current requestd page, head tag

@@ -45,12 +45,20 @@ function afc_general_settings_init(  ) {
 	);
 
 	add_settings_field( 
-		'afc_input_field_0', 
+		'afc_select_field_0', 
 		__( 'Load editor', 'afc_textdomain' ), 
 		'afc_general_show_editor_select', 
 		'afc_generalPage', 
 		'afc_generalPage_section' 
 	);
+    
+    add_settings_field( 
+        'afc_select_field_1', 
+        __( 'Load editor', 'afc_textdomain' ), 
+        'afc_general_webfont_active_select', 
+        'afc_generalPage', 
+        'afc_generalPage_section' 
+    );
 }
 
 /*
@@ -64,8 +72,25 @@ function afc_general_show_editor_select(  ) {
 		<option value="yes" <?php echo ( ( isset( $options['show_editor_btn'] ) && $options['show_editor_btn'] == 'yes' )? 'selected="selected"' : '' ); ?>/>Yes</option>
 		<option value="no" <?php echo ( ( isset( $options['show_editor_btn'] ) && $options['show_editor_btn'] == 'no' )? 'selected="selected"' : '' ); ?>/>No</option>
 	</select>
+    <br />
 	<?php
-	echo __( ' Activate frontend editor ( Can be accessed from its button in admin bar. Only for administrator )', 'afc_textdomain' );
+	echo __( 'Activate frontend editor ( Can be accessed from its button in admin bar. Only for administrator )', 'afc_textdomain' );
+}
+
+/*
+ * This prints a field to receive using webfont status
+ */
+function afc_general_webfont_active_select(  ) { 
+
+	$options = get_option( 'afc_general_settings' ); 
+    ?>
+	<select name="afc_generalPageSettings[use_webfontloader]">
+		<option value="yes" <?php echo ( ( isset( $options['use_webfontloader'] ) && $options['use_webfontloader'] == 'yes' )? 'selected="selected"' : '' ); ?>/>Yes</option>
+		<option value="no" <?php echo ( ( isset( $options['use_webfontloader'] ) && $options['use_webfontloader'] == 'no' )? 'selected="selected"' : '' ); ?>/>No</option>
+	</select>
+    <br />
+	<?php
+	echo __( 'If you want prevent fout (flash on fonts when loading a webpage) then activate the webfontloader. ', 'afc_textdomain' );
 }
 
 /*
@@ -82,6 +107,8 @@ function afc_validate_generalOptions( $input ){
 	$options = get_option('afc_general_settings');
 	if( isset($input['show_editor_btn']) )
 		$options['show_editor_btn'] = $input['show_editor_btn'];
+    if( isset($input['use_webfontloader']) )
+		$options['use_webfontloader'] = $input['use_webfontloader'];
 	update_option('afc_general_settings', $options );
 	add_settings_error( 'afc_generalPageSettings', 'afc', __( 'Your changes saved.', 'afc_textdomain' ), 'updated' );
 	
