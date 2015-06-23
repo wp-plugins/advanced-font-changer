@@ -54,7 +54,7 @@ function afc_general_settings_init(  ) {
     
     add_settings_field( 
         'afc_select_field_1', 
-        __( 'Load editor', 'afc_textdomain' ), 
+        __( 'Use WebFontLoader ?', 'afc_textdomain' ), 
         'afc_general_webfont_active_select', 
         'afc_generalPage', 
         'afc_generalPage_section' 
@@ -90,7 +90,7 @@ function afc_general_webfont_active_select(  ) {
 	</select>
     <br />
 	<?php
-	echo __( 'If you want prevent fout (flash on fonts when loading a webpage) then activate the webfontloader. ', 'afc_textdomain' );
+	echo __( 'If you want prevent fout (flash on fonts when loading a webpage) then activate the webfontloader. ( This feature is not compatible with some themes and it is better to keep it inactive. ) ', 'afc_textdomain' );
 }
 
 /*

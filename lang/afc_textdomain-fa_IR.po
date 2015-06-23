@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: afc v1.1\n"
-"POT-Creation-Date: 2015-05-28 18:22+0330\n"
-"PO-Revision-Date: 2015-06-04 18:35+0330\n"
+"POT-Creation-Date: 2015-06-23 23:37+0330\n"
+"PO-Revision-Date: 2015-06-23 23:38+0330\n"
 "Last-Translator: wp-magic <wpmagic70@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -15,42 +15,42 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../advanced-font-changer.php:196
+#: ../advanced-font-changer.php:201
 msgid "Font Changer"
 msgstr "ویرایشگر فونت"
 
-#: ../advanced-font-changer.php:197
+#: ../advanced-font-changer.php:202
 msgid "General Settings"
 msgstr "تنظیمات عمومی"
 
-#: ../advanced-font-changer.php:198 ../inc/admin/general.php:7
+#: ../advanced-font-changer.php:203 ../inc/admin/general.php:7
 #: ../inc/classes/class_afcstrings.php:137
 msgid "Manage Fonts"
 msgstr "مدیریت فونت ها"
 
-#: ../advanced-font-changer.php:200
+#: ../advanced-font-changer.php:205
 msgid "Upload A Font"
 msgstr "آپلود فونت"
 
-#: ../advanced-font-changer.php:201 ../inc/admin/addexternalfont.php:43
+#: ../advanced-font-changer.php:206 ../inc/admin/addexternalfont.php:43
 #: ../inc/classes/class_afcstrings.php:139
 msgid "Add External Font"
 msgstr "اضافه کردن فونت خارجی"
 
-#: ../advanced-font-changer.php:202 ../inc/admin/general.php:7
+#: ../advanced-font-changer.php:207 ../inc/admin/general.php:7
 #: ../inc/classes/class_afcstrings.php:144
 msgid "Manage Selectors"
 msgstr "مدیریت سلکتورها"
 
-#: ../advanced-font-changer.php:204
+#: ../advanced-font-changer.php:209
 msgid "Add selector"
 msgstr "ایجاد سلکتور"
 
-#: ../advanced-font-changer.php:205 ../inc/admin/general.php:7
+#: ../advanced-font-changer.php:210 ../inc/admin/general.php:7
 msgid "Import/Export"
 msgstr "تنظیمات وروردی / خروجی گیری "
 
-#: ../advanced-font-changer.php:216 ../inc/admin/editfont.php:39
+#: ../advanced-font-changer.php:221 ../inc/admin/editfont.php:39
 msgid "Edit Font"
 msgstr "ویرایش فونت"
 
@@ -155,7 +155,7 @@ msgstr ""
 "نام فونت لوکال شما به لیست فونت ها اضافه شد. حال می توانید فایل های آن را در "
 "آدرس plugin-directory/fonts/local آپلود نمایید."
 
-#: ../inc/admin/addexternalfont.php:197 ../inc/admin/uploadfonts.php:191
+#: ../inc/admin/addexternalfont.php:197 ../inc/admin/uploadfonts.php:193
 msgid "A font with this name already exists."
 msgstr "فونتی با این نام از قبل موجود است."
 
@@ -440,17 +440,30 @@ msgstr "تنظیمات عمومی"
 msgid "Load editor"
 msgstr "بارگزاری ویرایشگر"
 
-#: ../inc/admin/general.php:68
-msgid ""
-" Activate frontend editor ( Can be accessed from its button in admin bar. "
-"Only for administrator )"
-msgstr "فعال سازی ادیتور افزونه ( تنها مدیریت به آن دسترسی دارد )"
+#: ../inc/admin/general.php:57
+msgid "Use WebFontLoader ?"
+msgstr "استفاده از وب فونت لودر؟"
 
-#: ../inc/admin/general.php:75
+#: ../inc/admin/general.php:77
+msgid ""
+"Activate frontend editor ( Can be accessed from its button in admin bar. "
+"Only for administrator )"
+msgstr "فعال سازی ادیتور افزونه ( تنها مدیریت به آن دسترسی دارد ) "
+
+#: ../inc/admin/general.php:93
+msgid ""
+"If you want prevent fout (flash on fonts when loading a webpage) then "
+"activate the webfontloader. ( This feature is not compatible with some "
+"themes and it is better to keep it inactive. ) "
+msgstr ""
+"اگر می خواهید از پرش فونت ها در هنگام بارگزاری صفحه سایتتان جلوگیری نمایید "
+"این گزینه را فعال نمایید. دقت کنید این مورد با بعضی قالب ها سازگار نیست  "
+
+#: ../inc/admin/general.php:100
 msgid "Here you can see general plugin options."
 msgstr "در این بخش می توانید تنظیمات عمومی افزونه را مشاهده نمایید."
 
-#: ../inc/admin/general.php:86
+#: ../inc/admin/general.php:113
 msgid "Your changes saved."
 msgstr "تغییرات شما ذخیره شد."
 
@@ -579,41 +592,39 @@ msgstr ""
 "strong>شما تنها مجاز به استفاده از این کاراکترها در نام فونت می باشید: [a-z],"
 "[A-Z],[0-9],[-]"
 
-#: ../inc/admin/uploadfonts.php:169
+#: ../inc/admin/uploadfonts.php:171
 msgid "Link address of file with this format is incorrect : "
 msgstr "لینک فایل با فرمت مقابل صحیح نیست: "
 
-#: ../inc/admin/uploadfonts.php:174
+#: ../inc/admin/uploadfonts.php:176
 msgid "You have inserted incorrect file format in field : "
 msgstr "فرمت فایل انتخاب شده در فیلد مقابل صحیح نیست: "
 
-#: ../inc/admin/uploadfonts.php:180
+#: ../inc/admin/uploadfonts.php:182
 msgid "Name of file with format eot is diffrent than file with format : "
 msgstr ""
 "نام فایل انتخاب شده با فرمت eot با فایل انتخاب شده با فرمت مقابل مطابقت "
 "ندارد: "
 
-#: ../inc/admin/uploadfonts.php:185
+#: ../inc/admin/uploadfonts.php:187
 msgid "Field for this file format is empty : "
 msgstr "فیلد فرمت مقابل خالی است: "
 
-#: ../inc/admin/uploadfonts.php:196
+#: ../inc/admin/uploadfonts.php:198
 msgid "Name of file with format eot has wrong characters."
 msgstr "نام فایل با فرمت eot دارای کاراکترهایی غیرمجاز می باشد."
 
-#: ../inc/admin/uploadfonts.php:201
+#: ../inc/admin/uploadfonts.php:203
 msgid "Please insert a eot file in field with format eot."
 msgstr "لطفا یک فایل با فرمت eot در فیلد با این نام درج نمایید."
 
-#: ../inc/admin/uploadfonts.php:206
+#: ../inc/admin/uploadfonts.php:211
 msgid ""
-"AFC fonts folder not exists, please make sure: plugins-directory/advanced-"
-"font-changer/fonts/local folder exists"
+"My fonts folder not exists and i am unable to create it. please go to your "
+"wp uploads directory and create a folder with this name: afc-local-fonts."
 msgstr ""
-"فولدر فونت های AFC موجود نیست! لطفا اطمینان حاصل نمایید پوشه ی مقال موجود "
-"است: plugins-directory/advanced-font-changer/fonts/local"
 
-#: ../inc/admin/uploadfonts.php:227
+#: ../inc/admin/uploadfonts.php:234
 msgid "Your font successfully saved."
 msgstr "فونت شما با موفقیت اضافه گردید."
 
@@ -993,6 +1004,13 @@ msgstr "قبول"
 #: ../inc/printeditor.php:277
 msgid "Toggle Editor"
 msgstr "مخفی کردن ویرایشگر"
+
+#~ msgid ""
+#~ "AFC fonts folder not exists, please make sure: plugins-directory/advanced-"
+#~ "font-changer/fonts/local folder exists"
+#~ msgstr ""
+#~ "فولدر فونت های AFC موجود نیست! لطفا اطمینان حاصل نمایید پوشه ی مقال موجود "
+#~ "است: plugins-directory/advanced-font-changer/fonts/local"
 
 #~ msgid "Please fill in selectorname.<br>"
 #~ msgstr "لطفا نام سلکتور را وارد نمایید. <br>"
