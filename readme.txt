@@ -15,7 +15,7 @@ AFC is a wp plugin that lets you change the style of texts in your theme using i
 The plugin editor lets you change the appearance of your theme from time to time without any code editing or css knowledge. Just choose the text and change the style. If you know css you can also edit the generated selectors
 <br />
 
-If currently you are installed this plugin please read <a href="http://www.wp-src.ir/afc/version-1-5-1-release-notes/">this blog post</a> before update
+If currently you are installed v1.5 of this plugin please read <a href="http://www.wp-src.ir/afc/version-1-5-1-release-notes/">this blog post</a> before update
 
 <br />
 For more help please visit this <a href="http://wp-src.ir/afc">link</a>.
@@ -43,8 +43,15 @@ For more help please visit this <a href="http://wp-src.ir/afc">link</a>.
 Enjoy using this free plugin !!
 
 == Changelog ==
+1.5.2
+<br />
+<li>Edited plugin strings</li>
+<li>Edited javascript to not using webfontloader even if it is admin</li>
+
 1.5.1
+<br />
 Before update you must backup your fonts
+<br />
 <a href="http://www.wp-src.ir/afc/version-1-5-1-release-notes/">For understanding how to backup please read this important blog post</a>
 <li>Added an option to disable using webfontloader (For those who have problem that fonts are not being loaded)</li>
 <li>Fonts directory is changed</li>
