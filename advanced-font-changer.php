@@ -102,8 +102,8 @@ add_action( 'wp', 'afc_register_scripts' );
 function afc_register_scripts(){
 	$afcStyles = new afcstyles;
 	$editorNonce = wp_create_nonce( 'afc-editor-nonce' );
-	$activateEditor = get_option('afc_general_settings');
-	if( is_user_logged_in() && current_user_can('manage_options') && $activateEditor['show_editor_btn'] == 'yes' ){
+	$generalOptions = get_option('afc_general_settings');
+	if( is_user_logged_in() && current_user_can('manage_options') && $generalOptions['show_editor_btn'] == 'yes' ){
 		$afcSelectors = new afcselectors();
 		$afcFonts = new afcfonts();
 		$currentPageTypeSelectors = $afcSelectors->getByPageType();
@@ -132,7 +132,8 @@ function afc_register_scripts(){
 			'allfonts' => $allfonts, 'afcpluginurl' => ADVANCEDFONTCHANGERURL, 'afcsiteurl' => get_bloginfo('wpurl'), 
 			'afc_strings' => afcStrings::getString('editorStrings'), 'propertyList' => afcStrings::getString("propertyList"),
 			'afc_existingData' => ( is_array( $currentPageTypeSelectors ) )?  $currentPageTypeSelectors : array(),
-			'afcLocalFontFacesURL' => $afcStyles->createFontGeneratorUrl('afc-editor-fonts-nonce')
+			'afcLocalFontFacesURL' => $afcStyles->createFontGeneratorUrl('afc-editor-fonts-nonce'),
+			'wf_status' => $generalOptions['use_webfontloader']
 			)
 		);
 	}
@@ -147,12 +148,14 @@ add_action( 'admin_enqueue_scripts', 'afc_enqueue_in_admin' );
  */
 function afc_enqueue_in_frontend(){
 	$generalOptions = get_option('afc_general_settings');
-    if( $generalOptions['use_webfontloader'] == 'yes' || is_user_logged_in()  ){
+	if( is_user_logged_in() ){
+		wp_enqueue_script( 'jquery' );
+	}
+    if( $generalOptions['use_webfontloader'] == 'yes' ){
         $afcStyles = new afcstyles;
-        wp_enqueue_script( 'jquery' );
         wp_enqueue_script( 'afc-web-font-loader', ADVANCEDFONTCHANGERURL . 'js/webfontloader.js' );
         wp_enqueue_script( 'afc-font-loader', ADVANCEDFONTCHANGERURL . 'js/fontloader.js' );
-        wp_localize_script( 'afc-font-loader', 'afc_fonts_loader_data', array( 'wf_obj' => $afcStyles->getFontLoaderObject() ) );
+        wp_localize_script( 'afc-font-loader', 'afc_fonts_loader_data', array( 'wf_obj' => $afcStyles->getFontLoaderObject()) );
     }
 	//We load this style and js files only for admins. Normal viewer do not needs this files.
 	if( is_user_logged_in() && current_user_can('manage_options') && $generalOptions['show_editor_btn'] == 'yes' ){
@@ -246,8 +249,8 @@ function afc_inline_links() {
             $afcStyles = new afcstyles;
             $localLink = $afcStyles->createFontGeneratorUrl( 'afc-public-fonts-nonce' );
             $googleLink = $afcStyles->generateGoogleFontsStyle();
-            echo '<link href="'. $localLink .'" type="text/css" rel="stylesheet" />
-            <link href="'. $googleLink .'" type="text/css" rel="stylesheet" />';
+            echo '<link class="afcdirectloadlocalfonts" href="'. $localLink .'" type="text/css" rel="stylesheet" />
+            <link class="afcdirectloadgooglefonts" href="'. $googleLink .'" type="text/css" rel="stylesheet" />';
         }
     }
 }

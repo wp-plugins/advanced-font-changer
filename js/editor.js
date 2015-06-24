@@ -787,24 +787,48 @@ function insertFont(requestedFontName) {
     var fontName = requestedFontName
 	, thisFont = extractThisFont(fontName)
 	, thisFontsObj = {};
-    if (thisFont['status'] == 'local') {
-        if (fontGeneratorUrl.indexOf(fontName) < 0)
-            fontGeneratorUrl += fontName + '|';
-        var localFont = afcCreateFontObject('local', [thisFont]);
-        if (isNotEmpty(localFont)) {
-            thisFontsObj.custom = localFont;
-            getFJ('.afcfontloaderlink').remove();
-        }
-    }
-    else if (thisFont['status'] == 'google') {
-        var googleFont = afcCreateFontObject('google', [thisFont]);
-        if (isNotEmpty(googleFont))
-            thisFontsObj.google = googleFont;
-    }
+	if(afc_data_obj.wf_status == 'yes'){
+		if (thisFont['status'] == 'local') {
+			if (fontGeneratorUrl.indexOf(fontName) < 0){
+				fontGeneratorUrl += fontName + '|';
+				var localFont = afcCreateFontObject('local', [thisFont]);
+				if (isNotEmpty(localFont)) {
+					thisFontsObj.custom = localFont;
+					getFJ('.afcfontloaderlink').remove();
+				}
+			}
+		}
+		else if (thisFont['status'] == 'google') {
+			var googleFont = afcCreateFontObject('google', [thisFont]);
+			if (isNotEmpty(googleFont))
+				thisFontsObj.google = googleFont;
+		}
 
-    if (isNotEmpty(thisFontsObj)) {
-        document.getElementsByClassName('afcframe')[0].contentWindow.WebFont.load(thisFontsObj);
-    }
+		if (isNotEmpty(thisFontsObj)) {
+			document.getElementsByClassName('afcframe')[0].contentWindow.WebFont.load(thisFontsObj);
+		}
+	}
+	else{
+		if (thisFont['status'] == 'local') {
+			var href = getFJ('.afcdirectloadlocalfonts').attr("href");
+			if (href.indexOf(fontName) < 0){
+				href += fontName + '|';
+				getFJ('.afcdirectloadlocalfonts').attr("href", href);
+			}
+		}
+		else if (thisFont['status'] == 'google') {
+			var href = getFJ('.afcdirectloadgooglefonts').attr("href");
+			if (href.indexOf(fontName) < 0){
+				href += fontName + '|';
+				getFJ('.afcdirectloadgooglefonts').attr("href", href);
+			}
+				//getFJ('head').append();
+		}
+
+		//if (isNotEmpty(thisFontsObj)) {
+		//	document.getElementsByClassName('afcframe')[0].contentWindow.WebFont.load(thisFontsObj);
+		//}
+	}
 
     getFJ().css({ 'font-family': fontName });
 }
