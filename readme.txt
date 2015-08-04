@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 == Description ==
 <h5>Visually change text styles in your theme</h5>
 <br />
-AFC is a wp plugin that lets you change the style of texts in your theme using its visual editor.
+AFC lets you change the style of texts in your theme using its visual editor.
 The plugin editor lets you change the appearance of your theme from time to time without any code editing or css knowledge. Just choose the text and change the style. If you know css you can also edit the generated selectors
 <br />
 
@@ -41,20 +41,21 @@ Enjoy using this free plugin !!
 
 == Changelog ==
 1.5.3
-<br />
+<ul>
 <li>Resolved problem that when you upload a font it was not being added in fonts list.</li>
-
+</ul>
 
 1.5.2
-<br />
+<ul>
 <li>Edited plugin strings</li>
 <li>Edited javascript to not using webfontloader even if it is admin</li>
+</ul>
 
 1.5.1
 <br />
 Before update you must backup your fonts
 <br />
-<a href="http://www.wp-src.ir/afc/version-1-5-1-release-notes/">For understanding how to backup please read this important blog post</a>
+For understanding how to backup please read <a href="http://www.wp-src.ir/afc/version-1-5-1-release-notes/">this important blog post</a>
 <li>Added an option to disable using webfontloader (For those who have problem that fonts are not being loaded)</li>
 <li>Fonts directory is changed</li>
 
