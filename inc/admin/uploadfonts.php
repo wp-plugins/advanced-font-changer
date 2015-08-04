@@ -141,6 +141,7 @@ function afc_validate_fonts( $input ){
 	$formats = array( 'eot', 'ttf', 'woff', 'svg' );
     $firstFileInfo = array();
     $fileName = '';
+    $afcFonts = new afcfonts();
     $uploaddir = wp_upload_dir();
 	if( isset( $input['afc_eot_file'] ) && trim( $input['afc_eot_file'] ) != '' ){
 		$firstFileInfo = pathinfo( trim( $input['afc_eot_file'] ) );
@@ -148,7 +149,6 @@ function afc_validate_fonts( $input ){
 		$message = '';
 		$type = '';
 		if( preg_match( '/^[A-Za-z0-9-_]+$/', $fileName ) ){
-			$afcFonts = new afcfonts();
 			$allFonts = $afcFonts->getFonts('name');
 			$alreadyExists = 0;
 			if( is_array( $allFonts ) ){

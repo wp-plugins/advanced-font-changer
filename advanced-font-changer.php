@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) OR exit;
 Plugin Name: Advanced Font Changer
 Plugin URI: -
 Description: This plugin lets you visually change the font and other text properties in your theme, using its visual editor.
-Version: 1.5.2
+Version: 1.5.3
 Author: wp-magic
 Author URI: -
 License: GPL2
