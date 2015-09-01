@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 * This function outputs content of General Options admin page.
 */

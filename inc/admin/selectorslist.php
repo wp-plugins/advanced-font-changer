@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 * This function outputs content of Manage Selectors admin page.
 * uses wp list table and its extended class afc_selectorsList

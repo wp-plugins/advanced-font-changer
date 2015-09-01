@@ -3,7 +3,7 @@ Contributors: ParsiGroup.net Team
 Tags: font,visual font changer,font changer,afc,font style,font weight,text color,change,edit font,font family,font size
 Donate link: wp-src.ir/afc
 Requires at least: wordpress 3.5
-Tested up to: 4.2.2
+Tested up to: 4.3
 Stable tag: 2.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html

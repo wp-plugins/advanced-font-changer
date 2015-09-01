@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Outputs content of Edit Selector admin page.
  */

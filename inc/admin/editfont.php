@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 * This function outputs content of Edit Font admin page.
 */

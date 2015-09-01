@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
 * This class adds plugin default data into wp database
 */

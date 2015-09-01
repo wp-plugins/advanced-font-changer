@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
 * This class is for insert,update or get requested font names from database
 */

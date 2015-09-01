@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 defined( 'ABSPATH' ) OR exit;
 /*
 Plugin Name: Advanced Font Changer
