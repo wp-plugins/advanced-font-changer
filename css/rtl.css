@@ -80,6 +80,7 @@
     width: 80px;
     min-width: 60px;
     text-align: right;
+	margin-right: 0;
 }
 
 .afcui.selection.dropdown > .search.icon, .afcui.selection.dropdown > .delete.icon, .afcui.selection.dropdown > .dropdown.icon {
