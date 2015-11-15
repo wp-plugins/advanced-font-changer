@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Prints font faces based on requested fontnames
  * @param array $fontnames 

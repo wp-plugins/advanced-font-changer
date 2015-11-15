@@ -39,6 +39,16 @@ For more help please visit this <a href="http://wp-src.ir/afc">link</a>.
 Enjoy using this free plugin !!
 
 == Changelog ==
+1.5.5
+<ul>
+<li>RTL styles edited</li>
+</ul>
+
+1.5.4
+<ul>
+<li>Resolved problem that on some hosts plugin was unable to create its fonts table in database</li>
+</ul>
+
 1.5.3
 <ul>
 <li>Resolved problem that when you upload a font it was not being added in fonts list.</li>

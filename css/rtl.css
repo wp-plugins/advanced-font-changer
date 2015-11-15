@@ -38,11 +38,6 @@
     float: right;
 }
 
-.afcui.selection.dropdown > .search.icon, .afcui.selection.dropdown > .delete.icon, .afcui.selection.dropdown > .dropdown.icon {
-    right: auto;
-    left: 1.1em;
-}
-
 .afccolorpickerholder {
     left: auto;
     right: 90px;
@@ -74,4 +69,20 @@
 .ui.modal > .close {
     right: auto;
     left: 8px;
+}
+
+.afcui.selection.dropdown.fontweight {
+    min-width: 75px;
+}
+
+.afcui.selection.dropdown > .text {
+    height: 17px;
+    width: 80px;
+    min-width: 60px;
+    text-align: right;
+}
+
+.afcui.selection.dropdown > .search.icon, .afcui.selection.dropdown > .delete.icon, .afcui.selection.dropdown > .dropdown.icon {
+    right: auto;
+    left: .5em;
 }

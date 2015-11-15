@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Outputs content of Add Selector admin page.
  */

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * A local copy of wp list table
  * Base class for displaying a list of items in an ajaxified HTML table.

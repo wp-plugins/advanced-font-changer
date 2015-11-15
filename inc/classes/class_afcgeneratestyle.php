@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
 * This class generates links for font faces and generates style from available selectors based on current requested page type.
 * page type 'all' means all kind of pages.

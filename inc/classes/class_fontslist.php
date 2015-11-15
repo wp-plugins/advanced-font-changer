@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
 * This class is extended from a local copy of WP_List_Table. It is for generating a table of available fonts.
 * Please see wp_list_table docs in wordpress.org for more information.

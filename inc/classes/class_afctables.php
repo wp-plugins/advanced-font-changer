@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
 * This class is for working with plugin data tables
 */

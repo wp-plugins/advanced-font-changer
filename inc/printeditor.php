@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /**
  * Prints AFC editor HTML codes

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 * This function outputs content of Manage Fonts admin page.
 * uses wp list table and its extended class afc_fontsList

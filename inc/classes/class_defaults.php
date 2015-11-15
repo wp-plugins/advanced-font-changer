@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
 * This class adds plugin default data into wp database
 */
@@ -50,12 +50,12 @@ class afcdefaults extends afctables{
 		$charset = $this->charset;
 		$table_name = $this->fontsTable;
 		$sql = "CREATE TABLE $table_name (
-					  id mediumint NOT NULL auto_increment,
-					  name varchar(255) NOT NULL,
+					  id bigint(20) NOT NULL auto_increment,
+					  name varchar(250) NOT NULL,
 					  status varchar(20) NOT NULL,
 					  metadata text DEFAULT '' NOT NULL,
 					  UNIQUE KEY id (id),
-					  UNIQUE KEY name (name)
+					  UNIQUE name (name)
 				) $charset;";
 				
 		if( $this->createTable( $table_name, $sql, $charset ) )

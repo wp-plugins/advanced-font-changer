@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 add_action( 'wp_ajax_afc_ajax', 'afc_ajax_handler' );
 /**
  * Handles ajax requests in AFC
